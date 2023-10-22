@@ -19,6 +19,9 @@
 %stageGradientContainer {
   background-image: none;
 }
+%stageSeparator {
+  background-color: $main-color;
+}
 %stageHeaderContainer,
 %stageSpeakers,
 %stageParticipants {
@@ -37,10 +40,20 @@
     background-color: hsla(0, 0%, 100%, 0.05);
   }
 }
+%stageUserIconContainer {
+  background-color: $main-color;
+  color: #fff;
+}
+%stageOptionContainer {
+  background: rgba(0, 0, 0, calc(var(--background-shading) * 0.3));
+  &:hover {
+    background: rgba(0, 0, 0, calc(var(--background-shading) * 0.6));
+  }
+}
 
 // REQUESTS
 %stageRequestContainer {
-  background-color: hsla(0, 0%, 0%, 0.6);
+  background-color: rgba(0, 0, 0, calc(var(--background-shading) * 0.6));
 }
 %stageIconBigBackground {
   background-color: $main-color;

@@ -104,6 +104,10 @@
 %guildSettingsRoleIconPreview {
   background-color: hsla(0, 0%, 0%, 0.6);
 }
+%guildSettingsRoleUpsell,
+%guildSettingsRoleUpsellFooter {
+  background: hsla(0, 0%, 0%, 0.3);
+}
 // View server as role selection bar
 .container-3ssFyj {
   background-color: hsla(0, 0%, 0%, 0.8);
@@ -113,14 +117,41 @@
 }
 
 // EMOJI
+%themeDark {
+  .card-2ART2V:before,
+  .emojiRemove-D9w3jo {
+    background-color: hsla(0, 0%, 0%, .4);
+  }
+}
+.emojiRow-1aPaM- .emojiAliasInput-3ZhdKx .emojiInput-B8MGXq {
+  color: var(--text-normal);
+  background-color: rgba(255,255,255,.07);
+  border: none;
+  box-shadow: 0 0 0 2px rgb(255 255 255 / 9%);
+}
+.emojiAliasPlaceholder-3oShSx {
+  padding-top: 7px;
+  padding-left: 7px;
+}
 
 // STICKERS
 %stickersUploadCard {
   background-color: rgba(0, 0, 0, 0.4);
+  &:hover {
+    background-color: $hover-color;
+  }
 }
 %stickersTierLock {
   color: #fff;
   opacity: 0.3;
+}
+
+// SAFETY SETUP
+.clickableContainer-3YtEIY {
+  background-color: hsla(0, 0%, 0%, .4);
+}
+.backgroundModifierContainer-WjXgb2:hover:not(.disabled-3Q7kTN):not(.noAction-3PygTY) {
+	background:rgba(0,0,0,.2);
 }
 
 // AUTOMOD
@@ -148,9 +179,11 @@
 .actionTextHeader-yeCKjC {
 	color: hsla(0, 0%, 100%, .9) !important;
 }
+.stepperContainer-i-z0pP,
 .stepCountIcon-1A2Rxd {
 	background-color: hsla(0, 0%, 100%, .1);
 }
+.mentionLimitContainer-zBzr5i,
 .keywordListContainer-9ux8nU,
 .actionContainer-2krsiT {
 	background-color: hsla(0, 0%, 0%, .4);
@@ -260,7 +293,7 @@
   background-color: hsla(0, 0%, 0%, 0.4);
 }
 
-// DISCOVERY
+// directory
 .checklist-Asy_56 {
   background-color: hsla(0, 0%, 0%, 0.4);
   .header-Wl8ec- {

@@ -16,10 +16,6 @@
       display: none;
     }
   }
-  %messages {
-    background: transparent;
-    backface-visibility: hidden;
-  }
 
   // BASE
   %chatBase {
@@ -122,6 +118,7 @@
 }
 
 // CHAT LOADING
+%chatLoadingWrapperOuter,
 %chatLoadingWrapper {
   background-color: transparent;
 }

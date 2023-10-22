@@ -24,6 +24,15 @@
   }
 }
 
+%friendsDiscoverHint {
+  background: hsla(0, 0%, 0%, .2);
+  border: 2px solid $main-color;
+  &:hover {
+    background: hsla(0, 0%, 0%, .4);
+    border: 2px solid $hover-color;
+  }
+}
+
 // ACTION BUTTON
 %friendActionButton {
   background-color: hsla(0, 0%, 0%, 0.6);
@@ -145,12 +154,9 @@
 }
 
 // DM USER PROFILE
-.userProfileOuterUnthemed-2b2rsv {
+%userProfileOuterUnthemed {
 	background-color: hsla(0, 0%, 0%, .4);
-}
-.userProfileOuterUnthemed-2b2rsv .userPanelInnerThemed-2xZFjl {
-	background: transparent;
-}
-.overlayBackground-1KgwVi {
-	background-color: hsla(0, 0%, 0%, .4);
+  .userPanelInnerThemed-3YO1BB{
+    background: transparent;
+  }
 }

@@ -5,7 +5,7 @@
     %userPopoutInner {
       background: cv('bg.popout.overlay');
     }
-    &:not(.profileCustomizationPreview-2-Y173) {
+    &:not(.profileCustomizationPreview-3zZw6E) {
       %userPopoutInner {
         &::before {
           content: '';
@@ -39,6 +39,7 @@
   background-color: hsla(0, 0%, 0%, .4);
   >%menuPopout {
     background-color: transparent;
+    animation: none;
   }
   %userPopoutNoBannerPremium {
     -webkit-mask: linear-gradient(to bottom, #000 50%, transparent);
@@ -62,11 +63,9 @@
     }
   }
 }
-%userPopoutOuter {
-  &%userProfileOuterUnthemed {
-    %userPopoutButtonColor {
-      background-color: $main-color;
-    }
+%userProfileOuterUnthemed {
+  %userPopoutButtonColor {
+    background-color: $main-color;
   }
 }
 %userPopoutMessageInputContainer {

@@ -1,6 +1,6 @@
 /* USER ROLE */
 %userPopoutRoles,
-.roleWrapper-2IhvNd {
+%roleWrapper {
   %role {
     position: relative;
     display: flex;
@@ -93,8 +93,8 @@
     }
   }
 }
-
-.container-2O1UgZ {
+/*assign roles popout*/
+.container-2kTWmC {
   background-color: hsla(0, 0%, 0%, 0.8);
   border: none;
 }
