@@ -1,5 +1,5 @@
 /* ### Powered by DiscordSelectors v0.2.7 ### */
-.appMount_c99875 {
+.appMount_fae9dd {
   @extend %appMount !optional;
 }
 .platform-win {
@@ -28,15 +28,15 @@
   @extend %shakeable !optional;
 }
 .bg__12180, /*Canary FIx*/
-.bg__8df5St {
+.bg__7adbf {
   @extend %bg !optional;
 }
 .layers__1c917, /*Canary Fix*/
-.layers_a23c37 {
+.layers_a40797 {
   @extend %layers !optional;
 }
-.layer__6b5c3, /*Canary Fix*/
-.layer_f7d46a {
+.layer__2efaa, /*Canary Fix*/
+.layer_e552e0 {
   @extend %layer !optional;
 }
 .container__037ed {
@@ -1410,7 +1410,7 @@
 .wrapper_ed1dea {
   @extend %guildFolderWrapper !optional;
 }
-.expandedFolderBackground_b1385f{
+.expandedFolderBackground__1bec6 {
   @extend %guildExpandedFolderBackground !optional;
 }
 .collapsed__0a270 {
@@ -1677,7 +1677,7 @@
 .settingIcon_cd1ad1 {
   @extend %libraryTableSettingIcon !optional;
 }
-.hidden__ndzQV {
+.hidden__845d8 {
   @extend %libraryTableSettingIconHidden !optional;
 }
 .scroller__9c698 {
@@ -1686,7 +1686,7 @@
 .installationPath_fa3a82 {
   @extend %libraryInstallationPath !optional;
 }
-.themedBackground__3a4c0 {
+.background__0a6fb {
   @extend %libraryUsageBackground !optional;
 }
 .foreground__26bd6 {
