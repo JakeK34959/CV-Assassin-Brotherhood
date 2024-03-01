@@ -2567,12 +2567,12 @@ textarea::-webkit-scrollbar {
   outline: none;
 }
 
-.childWrapper_a6ce15 > svg {
+.childWrapper__01b9c > svg {
   width: 100%;
   height: 100%;
   background: var(--home-icon) var(--home-position)/var(--home-size) no-repeat;
 }
-.childWrapper_a6ce15 > svg > path {
+.childWrapper__01b9c > svg > path {
   display: none;
 }
 
@@ -2595,13 +2595,13 @@ textarea::-webkit-scrollbar {
   height: 10px !important;
 }
 
-.childWrapper_a6ce15 {
+.childWrapper__01b9c {
   background-color: rgba(0, 0, 0, 0.3);
   color: hsla(0, 0%, 100%, 0.7);
   transition: all 0.3s ease-in-out;
 }
 
-.wrapper_d281dd:hover .childWrapper_a6ce15, .wrapper_d281dd.selected_f5ec8e .childWrapper_a6ce15 {
+.wrapper_d281dd:hover .childWrapper__01b9c, .wrapper_d281dd.selected_f5ec8e .childWrapper__01b9c {
   background-color: var(--main-color);
   color: #fff;
 }
