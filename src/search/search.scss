@@ -1,0 +1,58 @@
+/* SEARCH */
+%chatContentWrapper %searchResultsWrap {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+%searchResultsWrap {
+  // HEADER
+  > %searchHeader {
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    %tabBarItem {
+      &%tabBarItemSelected {
+        background-color: $main-color;
+      }
+      &:hover:not(%tabBarItemDisabled) {
+        background-color: $hover-color;
+      }
+    }
+  }
+
+  // RESULT
+  %searchResult {
+    padding-bottom: 10px;
+    border-bottom: 1px solid hsla(0, 0%, 100%, 0.04);
+    background-color: transparent;
+    &:before,
+    &:after {
+      display: none;
+    }
+    + %searchResult {
+      margin-top: -1px;
+    }
+  }
+  %searchResultJumpButton {
+    background-color: hsla(0, 0%, 100%, 0.04);
+    color: hsla(0, 0%, 100%, 0.5);
+    border-radius: 3px;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      background-color: $main-color;
+      color: #fff;
+      transition-duration: 0.15s;
+    }
+  }
+  %searchResultHighlight {
+    position: relative;
+    padding: 0 2px;
+    background-color: $hover-color;
+    border-radius: 3px;
+    color: #fff;
+    text-shadow: 0 0 3px;
+  }
+}
+
+// Search results, a blocked user was hidden from your results
+%searchResultBlocked {
+  background-color: transparent;
+  border: none;
+}

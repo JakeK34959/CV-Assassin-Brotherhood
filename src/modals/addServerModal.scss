@@ -1,0 +1,75 @@
+/* ADD SERVER MODAL */
+
+// MAIN PAGE
+%themeLight {
+  %addServerContainer {
+    %defaultColor {
+      color: #fff;
+    }
+    %textSmallNormal {
+      color: hsla(0, 0%, 100%, 0.7) !important;
+    }
+    %input {
+      color: rgb(220, 221, 222);
+    }
+  }
+}
+%addServerOption {
+  background-color: $main-color;
+  &:hover {
+    background-color: $hover-color;
+  }
+  %addServerOptionText {
+    color: #fff;
+  }
+  %addServerOptionArrow {
+    filter: brightness(0) invert(1);
+  }
+}
+%addServerOptionHeader {
+  color: hsla(0, 0%, 100%, 0.7) !important;
+}
+// CREATE SERVER
+%themeLight {
+  %createServerTitle,
+  %createServerSubtitle {
+    color: hsla(0, 0%, 100%, 0.7) !important;
+  }
+  %createServerIconContainer > svg > circle {
+    fill: $main-color;
+  }
+  %createServerSkip {
+    color: hsla(0, 0%, 100%, 0.7) !important;
+  }
+}
+%createServerOtherBackButton,
+%createServerBackButton {
+  %buttonContents {
+    color: hsla(0, 0%, 100%, 0.7);
+    &:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+  }
+}
+
+// JOIN SERVER
+%joinServerInput {
+  background-color: transparent;
+}
+%joinServerExample {
+  color: $main-color;
+  font-weight: 500;
+}
+%joinServerRow {
+  background-color: $main-color;
+  &:hover {
+    background-color: $hover-color;
+  }
+  %joinServerRowText {
+    color: #fff;
+  }
+  %joinServerRowArrow {
+    filter: brightness(0) invert(1);
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "name": "Assassin Brotherhood",
+  "description": "Highly customizable theme for BetterDiscord.",
+  "private": true,
+  "scripts": {
+    "build": "npm run clean && npm run build.sass",
+    "build.sass": "sass --style=compressed --no-source-map hljs.scss:public/hljs.css main.scss:public/main.css",
+    "clean": "rimraf {public,test}",
+    "addons.clean": "rimraf {addons}",
+    "format": "prettier --write .",
+    "test": "npm run clean && npm run test.build",
+    "test.build": "sass --style=expanded --no-source-map hljs.scss:test/hljs.css main.scss:test/main.css",
+    "addons": "npm run addons.clean && npm run addons.build",
+    "addons.build": "sass --style=expanded --no-source-map scripts/hljs.scss:addons/hljs.css scripts/main.scss:addons/main.css"
+  },
+  "author": "Jake34959",
+  "contributors": [
+    "Leozard",
+    "NyxIsBad",
+    "LeafyLuigi",
+    "BabyBoySnow",
+    "Mentalscars",
+    "nihaals",
+    "OmgDani",
+    "untuned",
+    "xcruxiex"
+  ],
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "autoprefixer": "^10.4.4",
+    "postcss-cli": "^9.1.0",
+    "prettier": "^2.6.2",
+    "rimraf": "^3.0.2",
+    "sass": "^1.49.11"
+  }
+}

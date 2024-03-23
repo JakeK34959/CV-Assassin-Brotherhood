@@ -1,0 +1,287 @@
+/* FORUMS */
+// main container
+%themeDark %forumContainer {
+  background: rgba(0, 0, 0, calc(#{cv('bg.app.shading')} * 0.3));
+}
+// HEADER
+%forumHeader {
+  background-color: transparent;
+}
+
+// SEARCH
+%forumSearch {
+  font-family: var(--main-font);
+  font-weight: 300;
+  padding: 0 5px 0 5px;
+  border-radius: 4px;
+}
+%forumSearchRow {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+// NEW POST
+%forumUploadButton {
+  background: $main-color;
+  transition: all 0.15s ease-in-out;
+  &:hover {
+    background: $hover-color;
+    transition: all 0.15s ease-in-out;
+  }
+}
+%forumUploadIcon {
+  color: #fff;
+}
+
+// BE THE FIRST TO START A CONVERSATION
+%forumFirstIcon {
+  background: $main-color;
+  color: #fff;
+}
+
+// GET STARTED
+%forumSetupContainer {
+  background-color: hsla(0, 0%, 0%, 0.4);
+}
+%forumSetupStepContainer {
+  background-color: hsla(0, 0%, 100%, 0.07);
+  border: 2px solid $main-color;
+  &:hover {
+    background-color: hsla(0, 0%, 100%, 0.09);
+    border: 2px solid $hover-color;
+  }
+}
+%forumSetupStepStatus {
+  background-color: transparent !important;
+}
+
+// GALLERY VIEW
+%forumCardContainer {
+  background: rgba(0, 0, 0, calc(var(--background-shading) * 0.3));
+  border: 2px solid $main-color;
+  &:hover {
+    background: rgba(0, 0, 0, calc(var(--background-shading) * 0.3));
+    border: 2px solid $hover-color;
+  }
+  &%forumOpen {
+    background-color: hsla(0, 0%, 100%, 0.1);
+    border-color: $main-color;
+  }
+  &%forumCardOpen {
+    background: hsla(0, 0%, 0%, 0.3);
+    border: 2px solid var(--success-color);
+  }
+}
+%forumContentPreview {
+  background-color: hsla(0, 0%, 100%, 0.05);
+  border-color: hsla(0, 0%, 100%, 0.09);
+}
+
+// LIST VIEW
+%themeDark {
+  %forumListContainer,
+  %forumIncreasedCard {
+    background: hsla(0, 0%, 0%, 0.3);
+    border: 2px solid $main-color;
+    &:hover {
+      background: hsla(0, 0%, 0%, 0.3);
+      border: 2px solid $hover-color;
+    }
+    &%forumListOpen {
+      background: hsla(0, 0%, 0%, 0.3);
+      border: 2px solid var(--success-color);
+    }
+  }
+}
+// fix the increased view's new reply feature
+%forumIncreasedReplyPreview {
+  background-color: hsla(0, 0%, 100%, 0.05);
+  border-color: 2px solid $main-color;
+  &:hover {
+    background-color: hsla(0, 0%, 100%, 0.05);
+    border-color: 2px solid $hover-color;
+  }
+}
+
+// SHARED
+%forumPinIcon {
+  background-color: $main-color;
+}
+%forumLoading {
+  background: hsla(0, 0%, 0%, 0.3);
+}
+
+// TAGS
+%themeDark %forumTag,
+%themeDark %forumIncreasedTag {
+  background: rgba(0, 0, 0, 0.6);
+  border: 2px solid $main-color;
+  &%forumTagClickable:not(%forumTagDisabled):hover {
+    background: transparent;
+    border: 2px solid $hover-color;
+  }
+  &%forumTagSelected {
+    border: 2px solid var(--success-color);
+  }
+}
+%themeDark %forumIncreasedTag {
+  border-radius: 20px;
+  height: 32px;
+  width: fit-content;
+  text-align: center;
+  padding: 0 10px;
+}
+// typing animation & message count
+/*icon*/
+%forumMessageCountIcon > svg {
+  color: var(--channel-color);
+}
+/*post unread, message count, old*/
+/*important needed for inline*/
+%forumNewMessageCountText {
+  color: $main-color !important;
+}
+/* the !important is technically not needed but saves a rule
+ in %forumListContainer%forumListOpen %Dots, 
+ which creates an overriding inline rule*/
+%forumGalleryTypingDots, /*old forums*/
+%forumListTypingDots {
+  /*new forums*/
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 2px solid $main-color !important;
+}
+
+// tag box etc
+%forumTagBox {
+  background: rgba(0, 0, 0, 0.7);
+  %forumTagBoxCount {
+    background-color: $main-color;
+  }
+  %forumTagClear {
+    color: $main-color;
+    &:hover {
+      color: $hover-color;
+    }
+  }
+}
+%forumTagSelectedCount {
+  background: $main-color;
+}
+%forumSortDropdownButton {
+  background-color: $main-color;
+  %forumSortDropdownButtonInner,
+  %forumSortDropdownButtonText {
+    color: #fff !important;
+  }
+}
+%forumSortDropdownContainer {
+  background-color: transparent;
+}
+%forumTagButton {
+  background-color: rgba(0, 0, 0, 0.3);
+  %forumTagButtonInner {
+    color: #fff;
+  }
+}
+%themeDark %forumContentFooter {
+  background: transparent;
+}
+
+// RULES
+%forumRules {
+  background: rgba(0, 0, 0, 0.3);
+  border: 2px solid $main-color;
+  %forumRulesDesc {
+    background: rgba(0, 0, 0, 0.3);
+  }
+  %forumRulesGradient {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), transparent);
+  }
+  %forumRulesLinkContainer {
+    background: rgba(0, 0, 0, 0.8);
+  }
+  %headingLargeBold,
+  %headingLargeSemibold {
+    color: $main-color;
+  }
+}
+
+// CHAT
+%forumChat {
+  background: transparent;
+}
+%forumChatIcon {
+  background: $main-color;
+}
+%forumChatHead,
+%forumChatDivider,
+%forumChatStartBox {
+  background-color: transparent;
+}
+%forumChatStartBox:after {
+  border-color: transparent;
+}
+%forumMessageButton {
+  background-color: hsla(0, 0%, 100%, 0.05);
+  border-radius: 3px;
+  transition: all 0.15s ease-in-out;
+  &:hover {
+    background-color: hsla(0, 0%, 100%, 0.2);
+    border-color: hsla(0, 0%, 100%, 0.2);
+    color: #fff;
+  }
+  &%forumFollowActive {
+    color: $main-color;
+    &:hover {
+      color: $hover-color;
+    }
+  }
+}
+
+// admin/creation
+%themeDark %forumSettingsGuidelinesToolbar {
+  background: hsla(0, 0%, 0%, 0.6);
+  > %channelTextArea {
+    border-radius: 0 0 8px 8px;
+  }
+}
+%forumSettingsGuidelinesAddTags {
+  background: $main-color;
+}
+
+// EMPTY FORUM
+%forumEmpty {
+  background-color: transparent;
+}
+%forumEmptyCTA {
+  color: $main-color;
+  %themeDark &:hover {
+    color: $hover-color;
+  }
+}
+
+// EXAMPLE
+%forumExample,
+%forumExamplePreviewContainer {
+  background-color: transparent;
+}
+%forumExampleTag,
+%forumExamplePost,
+%forumExamplePreview {
+  background-color: hsla(0, 0%, 100%, 0.09);
+}
+%forumExamplePreviewPostIcon,
+%forumExamplePreviewBottomSeparator {
+  background-color: transparent;
+}
+%forumExamplePreviewInput {
+  background-color: hsla(0, 0%, 0%, 0.4);
+}
+
+// new posts button
+%forumNewPosts {
+  background: rgba(0, 0, 0, 0.4);
+  border: 2px solid $main-color;
+  %textMediumMedium {
+    color: $main-color !important;
+  }
+}

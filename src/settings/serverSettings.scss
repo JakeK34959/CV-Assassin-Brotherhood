@@ -1,0 +1,428 @@
+/* SERVER SETTINGS */
+
+// OVERVIEW - server banner
+%guildFeatureAvailabilityIndicator {
+  background-color: $main-color;
+  color: #fff;
+}
+
+// ROLES
+%guildSettingsRoleDefaultPermissions {
+  background-color: $main-color;
+  color: #fff;
+  &:hover {
+    background-color: $hover-color;
+  }
+}
+%guildSettingsRoleDefaultPermissionsIcon {
+  background-color: hsla(0, 0%, 0%, 0.6);
+}
+%roleRow {
+  &:before,
+  &:last-child:after {
+    background-color: hsla(0, 0%, 100%, 0.1);
+  }
+  &:hover:not(%roleRowDisabledHover) {
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+}
+%buttonCircle {
+  background-color: hsla(0, 0%, 0%, 0.6);
+  color: #fff;
+  &:hover {
+    &:not(%buttonCircleDisabled) {
+      background-color: $hover-color;
+      color: #fff;
+    }
+  }
+  %roleRow:hover:not(%roleRowDisabledHover) & {
+    background-color: hsla(0, 0%, 0%, 0.6);
+    color: #fff;
+    &:hover {
+      background-color: $hover-color;
+      color: #fff;
+    }
+  }
+}
+%guildSettingsRoleBackContainer {
+  background-color: transparent;
+}
+%guildSettingsRoleHeader {
+  background-color: transparent;
+  &:before {
+    content: '';
+    @include stretch;
+    position: absolute;
+    z-index: -1;
+    background: cv('bg.app.img') cv('bg.app.pos') / cv('bg.app.size') cv('bg.app.repeat') cv('bg.app.attach');
+    @include filters(cv('bg.app'));
+  }
+  &:after {
+    content: '';
+    @include stretch;
+    position: absolute;
+    z-index: -1;
+    background: cv('bg.app.overlay');
+  }
+}
+%guildSettingsRoleHeaderTabTop {
+  %guildSettingsRoleHeaderTabBrand {
+    &%tabBarItem {
+      &:hover {
+        border-bottom-color: $hover-color;
+      }
+      &%tabBarItemSelected,
+      &:active {
+        border-bottom-color: $main-color;
+      }
+    }
+  }
+}
+%guildSettingsRoleList {
+  %guildSettingsRoleListRow {
+    &:hover {
+      &:not(%tabBarItemDisabled) {
+        background-color: hsla(0, 0%, 100%, 0.07);
+      }
+    }
+    %roleCircle {
+      &::before {
+        background-color: transparent;
+      }
+    }
+    &%tabBarItemSelected {
+      background-color: transparent;
+      %roleCircle {
+        &::before {
+          background-color: inherit;
+        }
+      }
+    }
+  }
+}
+%guildSettingsRoleIconPreview {
+  background-color: hsla(0, 0%, 0%, 0.6);
+}
+// View server as role selection bar
+%guildSettingsRoleViewAsDropdown {
+  background-color: hsla(0, 0%, 0%, 0.8);
+}
+
+// EMOJI
+%themeDark {
+  %guildSettingsEmojiCard:before,
+  %guildSettingsEmojiRemove {
+    background-color: hsla(0, 0%, 0%, 0.4);
+  }
+}
+%guildSettingsEmojiRow {
+  &:hover {
+    %guildSettingsEmojiAliasPlaceholder {
+      visibility: hidden;
+    }
+  }
+  %guildSettingsEmojiAliasInput {
+    %guildSettingsEmojiInput {
+      color: var(--text-normal);
+      background-color: hsla(0, 0%, 100%, 0.07);
+      border: none;
+      box-shadow: 0 0 0 2px hsla(0, 0%, 100%, 0.09);
+    }
+    &:has(%guildSettingsEmojiInput:focus-within) {
+      + %guildSettingsEmojiAliasPlaceholder {
+        visibility: hidden;
+      }
+    }
+  }
+}
+
+// STICKERS
+%guildSettingsStickersUploadCard {
+  background-color: rgba(0, 0, 0, 0.4);
+  &:hover {
+    background-color: $hover-color;
+  }
+}
+%guildSettingsStickersTierLock {
+  color: #fff;
+  opacity: 0.3;
+}
+
+// SAFETY SETUP
+%guildSettingsSafetyChangeLog,
+%guildSettingsSafetyChecklist {
+  background-color: hsla(0, 0%, 0%, 0.4);
+}
+%guildSettingsSafetyPill {
+  background-color: transparent;
+  border: 2px solid $main-color;
+}
+%guildSettingsSafetyItemWrapper {
+  background-color: transparent;
+}
+
+// AUTOMOD
+%automodBadge {
+  border: none;
+  padding: 4px 6px;
+}
+%automodEditCard {
+  background-color: hsla(0, 0%, 0%, 0.4);
+  &%automodEditCardActive {
+    background-color: hsla(0, 0%, 0%, 0.4);
+    &%automodEditCardToggled {
+      background-color: hsla(0, 0%, 0%, 0.4);
+    }
+  }
+}
+%automodRuleIconContainer {
+  background-color: $main-color;
+}
+%automodRuleIcon {
+  color: #fff;
+}
+%automodActionTag {
+  background-color: transparent;
+  border: 2px solid $main-color;
+}
+%automodActionIcon,
+%automodActionText {
+  color: #fff !important;
+}
+%automodStepIcon {
+  background-color: hsla(0, 0%, 100%, 0.1);
+}
+%automodStepperCOntainer {
+  background-color: hsla(0, 0%, 100%, 0.1);
+  %input {
+    &:focus {
+      box-shadow: none;
+    }
+  }
+}
+%automodContentCard {
+  background-color: hsla(0, 0%, 0%, 0.4);
+}
+%automodCollapseableCard {
+  background-color: hsla(0, 0%, 0%, 0.4);
+  &:active {
+    background-color: hsla(0, 0%, 0%, 0.6);
+  }
+  &%automodCollapseableCardToggled:active {
+    background-color: hsla(0, 0%, 0%, 0.6);
+  }
+}
+%automodCollapseableHeaderContainer,
+%automodCollapseableHeaderClickable,
+%automodCollapseablePointer {
+  background-color: transparent;
+}
+%automodCollapsedContainer {
+  background-color: transparent;
+  border: none;
+}
+%automodCollapseableRadioBackground {
+  &%automodCollapseableRadioSelected {
+    background-color: hsla(0, 0%, 100%, 0.07);
+  }
+}
+%automodKeywordsTextArea,
+%automodRegexTextArea {
+  color: var(--text-normal);
+  background-color: hsla(0, 0%, 100%, 0.07);
+  border: none;
+  box-shadow: 0 0 0 2px hsla(0, 0%, 100%, 0.09);
+  &:focus {
+    box-shadow: 0 0 2px 2px $main-color;
+  }
+  &::placeholder {
+    color: hsla(0, 0%, 100%, 0.3);
+  }
+}
+%automodDropdown {
+  background-color: hsla(0, 0%, 0%, 0.8);
+  border: 1px solid hsla(0, 0%, 100%, 0.07);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+%automodDropdownRowLabel {
+  background-color: hsla(0, 0%, 100%, 0.1);
+}
+%automodDropdownChannelIcon {
+  color: #fff;
+}
+
+// AUDIT LOG
+%themeDark {
+  %guildSettingsAuditLog {
+    border-color: hsla(0, 0%, 100%, 0.07);
+  }
+  %guildSettingsAuditHeader {
+    background-color: hsla(0, 0%, 0%, 0.4);
+  }
+  %guildSettingsAuditHeaderExpanded,
+  %guildSettingsAuditDivider,
+  %guildSettingsAuditChangeDetails {
+    background-color: hsla(0, 0%, 0%, 0.6);
+  }
+}
+
+// BANS
+%guildSettingsBanContainer {
+  background-color: hsla(0, 0%, 0%, 0.4);
+}
+%guildSettingsBannedUser {
+  background-color: hsla(0, 0%, 100%, 0.07);
+}
+
+// SERVER TEMPLATE
+%guildSettingsTemplateDescription {
+  background-color: hsla(0, 0%, 0%, 0.4);
+}
+
+// COMMUNITY OVERVIEW
+%guildSettingsCommunityUpsell {
+  background-color: hsla(0, 0%, 0%, 0.4);
+}
+%guildSettingsCommunityUpsellFooter {
+  background-color: transparent;
+}
+// ONBOARDING
+%settingsContentRegion {
+  %guildSettingsOnboardingTestimonialContainer {
+    background-color: transparent;
+  }
+  %guildSettingsOnboardingTestimonialQuotes {
+    color: $main-color;
+  }
+  %guildSettingsOnboardingTestimonial {
+    %textSmallMedium {
+      color: #fff !important;
+    }
+  }
+  %guildSettingsOnboardingUpsell {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  %guildSettingsOnboardingUpsellList {
+    background-color: transparent;
+    &%guildSettingsOnboardingUpsellListSelected {
+      background-color: hsla(0, 0%, 100%, 0.07);
+    }
+  }
+  %guildSettingsOnboardingUpsellCheckboxCircle {
+    background-color: $main-color;
+  }
+  %guildSettingsOnboardingUpsellCheckbox {
+    &%guildSettingsOnboardingUpsellListSelected {
+      background-color: transparent;
+      border-color: $main-color;
+    }
+  }
+  %serverGuideMessageInner {
+    background-color: rgba(0, 0, 0, 0.4);
+    &%userPopoutInnerThemed {
+      background-color: transparent;
+    }
+  }
+  %serverGuideAction {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  %serverGuideChannelIcon {
+    background-color: $main-color;
+    svg {
+      color: #fff;
+    }
+  }
+}
+// SERVER INSIGHTS
+%guildSettingsInsightsAnalyticsCard {
+  background-color: hsla(0, 0%, 0%, 0.4);
+}
+%guildSettingsInsightsDeveloperPortal {
+  background-color: transparent;
+}
+%guildSettingsInsightsNotEnoughMembers {
+  background-color: var(--info-warning-background);
+}
+%guildSettingsInsightsMemberInsights {
+  background-color: transparent;
+}
+%guildSettingsInsightsActions {
+  background-color: transparent;
+}
+
+// ENABLE COMMUNITY
+%guildSettingsCommunityGuildDetails {
+  background-color: hsla(0, 0%, 0%, 0.4);
+}
+%guildSettingsCommunityFeatureCard,
+%guildSettingsCommunityFeatureIcon {
+  background-color: hsla(0, 0%, 0%, 0.4);
+}
+%checkboxWrapper%guildSettingsCommunityRow {
+  background-color: transparent;
+  &%checkboxChecked {
+    background-color: transparent;
+  }
+}
+
+// DISCOVERY
+%guildSettingsDiscoveryChecklist {
+  background-color: hsla(0, 0%, 0%, 0.4);
+  %guildSettingsDiscoveryHeader {
+    background-color: hsla(0, 0%, 0%, 0.4);
+  }
+  %guildSettingsDiscoverySeparator {
+    background-color: hsla(0, 0%, 100%, 0.06);
+  }
+}
+
+// WELCOME SCREEN
+%guildSettingsWelcomeEnable,
+%guildSettingsWelcomePreview {
+  background-color: hsla(0, 0%, 0%, 0.4);
+}
+%guildSettingsWelcomeEditCircle {
+  background-color: $main-color;
+  color: white;
+}
+%guildSettingsWelcomeChannel {
+  background-color: hsla(0, 0%, 100%, 0.05);
+}
+%guildSettingsWelcomeChannelIcon {
+  background-color: transparent;
+}
+
+// SERVER SUBSCRIPTIONS
+%guildSettingsSubsCard {
+  background-color: hsla(0, 0%, 0%, 0.4);
+}
+%guildSettingsSubsStepsContainer,
+%guildSettingsSubsStepsImageContainer {
+  background-color: transparent;
+}
+%guildSettingsSubsEarningsPreviewContainer,
+%guildSettingsSubsAvatarCard {
+  background-color: hsla(0, 0%, 100%, 0.07) !important;
+}
+%guildSettingsSubsEmojisContainer {
+  background-color: transparent;
+}
+%guildSettingsSubsViewServerButton {
+  background-color: $main-color;
+}
+
+// SERVER BOOST STATUS
+%themeDark {
+  %guildSettingsBoostBackground {
+    color: hsla(0, 0%, 0%, 0.4);
+  }
+  %guildSettingsBoostTierInProgress {
+    background-color: hsla(0, 0%, 0%, 0.4);
+    border: 3px solid #f47fff;
+  }
+  %guildSettingsBoostTierLocked,
+  %guildSettingsBoostTierUnlocked,
+  %guildSettingsBoostTierBody {
+    background-color: hsla(0, 0%, 0%, 0.4);
+  }
+}

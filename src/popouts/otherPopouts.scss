@@ -1,0 +1,74 @@
+// EMOJI INFO POPOUT
+%emojiInfoContainer {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+%emojiInfoTip {
+  background-color: transparent;
+}
+%emojiInfoGuild {
+  background-color: transparent;
+}
+
+// CHAT TOOLBAR
+%chatToolbar {
+  background-color: hsla(0, 0%, 0%, 0.8);
+  &::before {
+    border-top: 8px solid hsla(0, 0%, 0%, 0.8);
+  }
+}
+%chatToolbarActive,
+%chatToolbarHover:hover {
+  background-color: hsla(0, 0%, 100%, 0.05);
+}
+%chatToolbarIcon {
+  color: hsla(0, 0%, 100%, 0.7);
+}
+
+// STREAM POPOUT
+%themeDark {
+  %streamPopoutPreview {
+    background-color: hsla(0, 0%, 0%, 0.8);
+  }
+  %streamPopoutPreviewContainer {
+    background-color: transparent;
+  }
+  %streamPopoutWatchButton {
+    border-color: $main-color;
+    color: hsla(0, 0%, 100%, 0.8);
+    &:not([disabled]):hover {
+      border-color: $hover-color;
+      color: #fff;
+    }
+  }
+}
+
+// STUDENT HUBS
+%hubPopoutSidebar {
+  background: transparent;
+}
+
+// LEAVE SERVER REASON
+%serverLeave {
+  background-color: transparent;
+}
+%serverLeaveReason {
+  %serverDeleteReasonOption {
+    color: #fff;
+    background: hsla(0, 0%, 100%, 0.03);
+    border: 1px solid hsla(0, 0%, 100%, 0.05);
+    border-top: none;
+    &:first-child {
+      border-top: 1px solid hsla(0, 0%, 100%, 0.05);
+    }
+  }
+  &:hover {
+    background: hsla(0, 0%, 100%, 0.06);
+  }
+}
+
+// NITRO PROFILE PICTURE UPSELL
+/*right popout*/
+%sidebarPFPUpsell {
+  background: var(--background-overlay);
+  border-left: 5px solid $main-color;
+}
