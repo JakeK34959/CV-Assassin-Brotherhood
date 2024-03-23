@@ -1,13 +1,16 @@
-// PLUGIN NOTICE
-#pluginNotice {
-  #outdatedPlugins {
-    span {
-      color: #fff;
-      @include hover-shadow;
-    }
-  }
+// SELECT
+.bd-select,
+.bd-select.menu-open {
+  background-color: rgba(0, 0, 0, 0.5);
 }
-
+.bd-switch input:checked + .bd-switch-body {
+  --switch-color: $main-color;
+}
+// TRANSPARENCY TRIGGER
+.bd-transparency {
+  background: transparent !important;
+}
+// PLUGINS/THEMES
 // Plugins/Themes Searchbar & dropdown filter
 .bd-search-wrapper {
   background-color: hsla(0, 0%, 0%, 0.4) !important;
@@ -22,11 +25,14 @@
       background-color: rgba(255, 255, 255, 0.1) !important;
     }
     &.selected {
-      background-color: var(--main-color) !important;
+      background-color: $main-color !important;
     }
   }
 }
-
+.bd-settings-group.collapsible .bd-settings-title::before {
+  background-color: var(--interactive-normal);
+}
+// ADDONS
 .bd-addon-list .bd-addon-card {
   background-color: hsla(0, 0%, 0%, 0.4) !important;
 }
@@ -34,7 +40,8 @@
 .bd-addon-list .bd-addon-header {
   background-color: var(--backdrop-overlay);
 }
-
+// BUTTONS
+.bd-button-filled.bd-button-color-brand,
 .bd-button {
   background-color: $main-color;
   &:hover {
@@ -44,11 +51,15 @@
     background-color: $main-color;
   }
 }
+.bd-button.bd-button-icon svg {
+  fill: #fff;
+}
 .bd-addon-views {
   .bd-view-button.selected {
     background-color: $main-color;
   }
 }
+// SWITCH
 .bd-switch input:checked + .bd-switch-body {
   background-color: $main-color !important;
 }
@@ -58,6 +69,7 @@
 .bd-switch-symbol {
   color: $main-color !important;
 }
+// TOAST
 .bd-toast {
   background-color: $main-color;
   &.toast-info {
@@ -67,6 +79,8 @@
     background-color: $main-color;
   }
 }
+// LINKS
+.bd-changelog-modal .bd-modal-content a,
 .bd-link {
   color: var(--url-color);
 }

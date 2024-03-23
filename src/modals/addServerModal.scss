@@ -1,50 +1,75 @@
 /* ADD SERVER MODAL */
+
+// MAIN PAGE
 %themeLight {
-  .defaultColor__87d87 {
-    color: #fff;
-  }
-  .subtitle-3m-md1,
-  .subtitle-bIoUVX,
-  .optionHeader-27AHfD {
-    color: hsla(0, 0%, 100%, 0.7) !important;
-  }
-  .iconContainer-GFfNaA > svg > circle {
-    fill: $main-color;
-  }
-  .sampleLink-5BWNy9 {
-    color: $main-color;
-    font-weight: 500;
-  }
-  %buttonLinkPrimary {
-    color: hsla(0, 0%, 100%, 0.7);
-  }
-  .skip-2hTIXL {
-    color: hsla(0, 0%, 100%, 0.7) !important;
+  %addServerContainer {
+    %defaultColor {
+      color: #fff;
+    }
+    %textSmallNormal {
+      color: hsla(0, 0%, 100%, 0.7) !important;
+    }
+    %input {
+      color: rgb(220, 221, 222);
+    }
   }
 }
-
-// SERVER TEMPLATES
-.container-x8Y1ix {
+%addServerOption {
   background-color: $main-color;
   &:hover {
     background-color: $hover-color;
   }
-  .text-PdAsFQ {
+  %addServerOptionText {
     color: #fff;
   }
-  .arrow-2yY1Tm {
+  %addServerOptionArrow {
     filter: brightness(0) invert(1);
   }
 }
-.rowContainer-3t7486 {
+%addServerOptionHeader {
+  color: hsla(0, 0%, 100%, 0.7) !important;
+}
+// CREATE SERVER
+%themeLight {
+  %createServerTitle,
+  %createServerSubtitle {
+    color: hsla(0, 0%, 100%, 0.7) !important;
+  }
+  %createServerIconContainer > svg > circle {
+    fill: $main-color;
+  }
+  %createServerSkip {
+    color: hsla(0, 0%, 100%, 0.7) !important;
+  }
+}
+%createServerOtherBackButton,
+%createServerBackButton {
+  %buttonContents {
+    color: hsla(0, 0%, 100%, 0.7);
+    &:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+  }
+}
+
+// JOIN SERVER
+%joinServerInput {
+  background-color: transparent;
+}
+%joinServerExample {
+  color: $main-color;
+  font-weight: 500;
+}
+%joinServerRow {
   background-color: $main-color;
   &:hover {
     background-color: $hover-color;
   }
-  .rowText-3MQqQi {
+  %joinServerRowText {
     color: #fff;
   }
-  .rowArrow-TIwwIc {
+  %joinServerRowArrow {
     filter: brightness(0) invert(1);
   }
 }

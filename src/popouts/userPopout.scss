@@ -5,7 +5,10 @@
     %userPopoutInner {
       background: cv('bg.popout.overlay');
     }
-    &:not(.profileCustomizationPreview_ccc6a9) {
+    %userPopoutOverlayBackground {
+      background-color: hsla(0, 0%, 0%, 0.4);
+    }
+    &:not(%userPopoutCustomizationPreview) {
       %userPopoutInner {
         &::before {
           content: '';
@@ -36,7 +39,6 @@
   background-color: hsla(0, 0%, 0%, 0.4);
 }
 %userPopoutOverlayBackground {
-  background-color: hsla(0, 0%, 0%, 0.4);
   > %menuPopout {
     background-color: transparent;
     animation: none;
@@ -64,6 +66,7 @@
     }
   }
 }
+// ACTIVITY
 %userProfileOuterUnthemed {
   %userPopoutButtonColor {
     background-color: $main-color;

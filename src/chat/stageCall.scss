@@ -4,9 +4,6 @@
 %stageIconBackground {
   background-color: $main-color;
 }
-%stagePopoutTextInput {
-  background-color: transparent;
-}
 
 // STAGE
 %stageContainer {
@@ -22,32 +19,81 @@
 %stageSeparator {
   background-color: $main-color;
 }
-%stageHeaderContainer,
-%stageSpeakers,
 %stageParticipants {
-  background-color: hsla(0, 0%, 0%, 0.4);
+  background-color: transparent;
 }
-%stageModIconContainer {
-  > svg {
-    fill: #fff;
-    > rect {
-      fill: $main-color;
-    }
-  }
+%stageSpeakers {
+  background: transparent;
 }
 %stageParticipant {
+  background-color: hsla(0, 0%, 0%, 0.4);
   &:hover {
     background-color: hsla(0, 0%, 100%, 0.05);
   }
 }
-%stageUserIconContainer {
-  background-color: $main-color;
-  color: #fff;
+%stageMessageToast {
+  %stageMessageToastWrapper {
+    background-color: hsla(0, 0%, 0%, 0.8);
+    &:hover {
+      background-color: hsla(0, 0%, 0%, 0.6);
+    }
+  }
+}
+
+// THE AUDIENCE CONTAINER IN VC CHANNELS
+%stageVoiceUser {
+  padding-top: 4px;
+}
+%stageVoiceUserOverlap {
+  %stageVoiceUserAvatar {
+    border: none;
+  }
+}
+%stageAudienceContainer {
+  background-color: hsla(0, 0%, 0%, 0.8);
+  border: hsla(0, 0%, 0%, 0.8);
+  %stageAudienceIconContainer {
+    background: $main-color;
+  }
+  %stageAudienceIcon {
+    color: #fff;
+  }
+  %textSmallMedium {
+    color: rgba(255, 255, 255, 0.9) !important;
+  }
 }
 %stageOptionContainer {
   background: rgba(0, 0, 0, calc(var(--background-shading) * 0.3));
   &:hover {
     background: rgba(0, 0, 0, calc(var(--background-shading) * 0.6));
+  }
+}
+%stageLeaveButton {
+  background: $main-color;
+  &:hover {
+    background: $hover-color;
+  }
+}
+
+// ICON WHEN HOVERING SERVER
+%stageGuildListenerIcon {
+  background: $main-color;
+  %textExtraSmallNormal {
+    color: #fff !important;
+  }
+  > svg {
+    color: #fff;
+  }
+}
+
+// STARTING A STAGE CALL
+%stageTopicForm {
+  %input {
+    background: rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 0 2px $main-color;
+  }
+  %stageTopicInput {
+    background: transparent;
   }
 }
 

@@ -12,16 +12,15 @@ $cv: (
       ),
       text: (
         titlebar: (
-          main: 'ClearVision',
-          version: 'v#{$version}',
-          short: 'CV',
-        ),
-        account: (
-          main: 'ClearVision',
-          version: 'v#{$version}',
-        ),
+          main: 'Animus',
+          version: 'HR-8.5',
+          short: 'Animus',
+      ),
+      account: (main: 'Assassin',
+        version: 'Brotherhood',
       ),
     ),
+  ),
   // SETTINGS
   settings:
     (

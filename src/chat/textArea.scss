@@ -12,7 +12,7 @@
   background: rgba(0, 0, 0, 0.6);
   transition: all 0.15s ease-in-out;
   &:focus-within {
-    box-shadow: 0 0 2px 2px var(--main-color);
+    box-shadow: 0 0 2px 2px $main-color;
   }
 
   %channelTextAreaScrollable {
@@ -47,17 +47,6 @@
     transition: all 0.15s ease-in-out;
     &:hover {
       color: hsla(0, 0%, 100%, 0.9);
-    }
-  }
-  %themeDark .button__8d734 {
-    .buttonChild__7b90d {
-      color: hsla(0, 0%, 100%, 0.3);
-    }
-    .activeButtonChild__6e162 {
-      color: hsla(0, 0%, 100%, 0.7);
-    }
-    &:hover .activeButtonChild__6e162 {
-      color: #fff;
     }
   }
 

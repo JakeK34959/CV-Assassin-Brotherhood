@@ -1,4 +1,3 @@
-/* ### Powered by DiscordSelectors v0.2.7 ### */
 .appMount_fae9dd {
   @extend %appMount !optional;
 }
@@ -23,20 +22,16 @@
 .app_b1f720 {
   @extend %app !optional;
 }
-.app_de4237, /*Canary Fix*/
-.app__00c92 {
+.app_de4237 {
   @extend %shakeable !optional;
 }
-.bg__12180, /*Canary FIx*/
-.bg__7adbf {
+.bg__12180 {
   @extend %bg !optional;
 }
-.layers__1c917, /*Canary Fix*/
-.layers_a40797 {
+.layers__1c917 {
   @extend %layers !optional;
 }
-.layer__2efaa, /*Canary Fix*/
-.layer_e552e0 {
+.layer__2efaa {
   @extend %layer !optional;
 }
 .container__037ed {
@@ -47,6 +42,9 @@
 }
 .backdrop__7e89b {
   @extend %backdrop !optional;
+}
+.withLayer__1fe9d {
+  @extend %backdropWithLayer !optional;
 }
 .notice__5fd4c {
   @extend %notice !optional;
@@ -132,44 +130,6 @@
 .wrapper__35f8f {
   @extend %repluggedInstallWrapper !optional;
 }
-#bda-qem {
-  @extend %bdEmoteMenu !optional;
-}
-#bda-qem-twitch {
-  @extend %bdEmoteMenuTwitch !optional;
-}
-#bda-qem-favourite {
-  @extend %bdEmoteMenuFavourite !optional;
-}
-#bda-qem-emojis {
-  @extend %bdEmoteMenuEmojis !optional;
-}
-#bda-qem-twitch.active,
-#bda-qem-favourite.active,
-#bda-qem-emojis.active {
-  @extend %bdEmoteMenuActive !optional;
-}
-#bda-qem-twitch-container {
-  @extend %bdEmoteMenuTwitchContainer !optional;
-}
-#bda-qem-favourite-container {
-  @extend %bdEmoteMenuFavouriteContainer !optional;
-}
-.emote-menu-inner {
-  @extend %bdEmoteMenuInner !optional;
-}
-.bd-emote-header {
-  @extend %bdEmoteMenuHeader !optional;
-}
-.bd-emote-item {
-  @extend %bdEmoteItem !optional;
-}
-.emote-container {
-  @extend %bdEmoteContainer !optional;
-}
-.emote-icon {
-  @extend %bdEmoteIcon !optional;
-}
 #bd-settings-sidebar {
   @extend %bdSettingsSidebar !optional;
 }
@@ -184,6 +144,12 @@
 }
 .ui-tab-bar-separator {
   @extend %bdSettingsSidebarSeparator !optional;
+}
+.gameActivityToggleAdded_Yd-YxC {
+  @extend %bdGameActivityToggle !optional;
+}
+.progressBarContainer__9b571 {
+  @extend %serverBoostProgressBar !optional;
 }
 .containerDefault__23a29 {
   @extend %categoryContainerDefault !optional;
@@ -228,11 +194,20 @@
 .name__590d6 {
   @extend %categoryName !optional;
 }
+.overflow__87fe8 {
+  @extend %categoryText !optional;
+}
 .children_d4d259 {
   @extend %categoryButtons !optional;
 }
 .addButtonIcon_b776b3 {
   @extend %categoryAddIcon !optional;
+}
+.button_fb39e8 {
+  @extend %categoryNewChannel !optional;
+}
+.buttonIcon__9d124 {
+  @extend %categoryNewChannelIcon !optional;
 }
 .containerDefault__3187b {
   @extend %channelContainerDefault !optional;
@@ -259,7 +234,7 @@
 .wrapper__7bcde {
   @extend %channelWrapper !optional;
 }
-.modeUnread_f74c03 {
+.modeUnreadImportant_efb53e {
   @extend %channelWrapperUnread !optional;
 }
 .modeSelected__487d6 {
@@ -309,6 +284,9 @@
 }
 .listDefault__205d0 {
   @extend %voiceUserList !optional;
+}
+.clickable__137bc {
+  @extend %voiceUserClickable !optional;
 }
 .draggable__081c0 {
   @extend %voiceUserDraggable !optional;
@@ -381,15 +359,6 @@
 }
 .headerButton__3af9f {
   @extend %channelsHeaderButton !optional;
-}
-.guildIconContainer_a995c7 {
-  @extend %channelsHeaderGuildBadge !optional;
-}
-.partnered__77913 {
-  @extend %guildPartnered !optional;
-}
-.verified__8167d {
-  @extend %guildVerified !optional;
 }
 .animatedContainer__341f6 {
   @extend %bannerAnimatedContainer !optional;
@@ -465,6 +434,24 @@
 }
 .inner_ab95dc {
   @extend %connectionPanelInner !optional;
+}
+.connection_fff5f6 {
+  @extend %connections !optional;
+}
+.connectionHeader__3c82d {
+  @extend %connectionsHeader !optional;
+}
+.connectionIcon__1428c {
+  @extend %connectionsIcon !optional;
+}
+.connectionAccountLabel_a71192 {
+  @extend %connectionsAccountLabel !optional;
+}
+.connectionDelete__988b5 {
+  @extend %connectionsDelete !optional;
+}
+.metadataContainer__7b316 {
+  @extend %connectionsMetadataContainer !optional;
 }
 .rtcConnectionStatus__40882 {
   @extend %rtcConnectionStatus !optional;
@@ -544,6 +531,9 @@
 .activity_a8c37a {
   @extend %privateChannelActivity !optional;
 }
+.container_c344de {
+  @extend %privateChannelActivityContainer !optional;
+}
 .activityEmoji_f1bb5e {
   @extend %privateChannelActivityEmoji !optional;
 }
@@ -586,7 +576,7 @@
 .jumpToPresentBar__0ff7f {
   @extend %jumpToPresentBar !optional;
 }
-.hasMore-3e72_v {
+.hasMore_b03f46 {
   @extend %hasMore !optional;
 }
 .messagesErrorBar__06c0a {
@@ -658,6 +648,9 @@
 .chat__52833 {
   @extend %chat !optional;
 }
+.page__0b66e {
+  @extend %page !optional;
+}
 .content__1a4fe {
   @extend %chatContentWrapper !optional;
 }
@@ -681,9 +674,6 @@
 }
 .action_caa81f {
   @extend %chatGatedAction !optional;
-}
-.actionRed-gYn8D3 {
-  @extend %chatGatedActionRed !optional;
 }
 .resizeHandle_f1a098 {
   @extend %chatResize !optional;
@@ -745,35 +735,8 @@
 .header_f7f1f3 {
   @extend %gifPickerHeader !optional;
 }
-.searchBar__3b162 {
-  @extend %gifPickerSearchBar !optional;
-}
-.inner__999f6 {
-  @extend %gifPickerSearchBarInner !optional;
-}
-.input__74754 {
-  @extend %gifPickerSearchInput !optional;
-}
-.iconLayout__6d744 {
-  @extend %gifPickerSearchIconLayout !optional;
-}
-.iconContainer__3af05 {
-  @extend %gifPickerSearchIconContainer !optional;
-}
-.icon__37cc1 {
-  @extend %gifPickerSearchIcon !optional;
-}
-.visible__50aa8 {
-  @extend %gifPickerSearchIconVisible !optional;
-}
 .clear__76e04 {
   @extend %gifPickerSearchIconClear !optional;
-}
-.backButton__6a1f0 {
-  @extend %gifPickerSearchBackButton !optional;
-}
-.searchHeader-3w5h-0 {
-  @extend %gifPickerSearchHeader !optional;
 }
 .content__30de8 {
   @extend %gifPickerContent !optional;
@@ -802,8 +765,11 @@
 .result_e1fc74 {
   @extend %gifPickerResult !optional;
 }
-.focused-q9B2e4 {
+.focused__036ed {
   @extend %gifPickerResultFocused !optional;
+}
+.searchSuggestion__5559d {
+  @extend %gifPickerSearchSuggestion !optional;
 }
 .favButton__11e5a {
   @extend %gifPickerFavButton !optional;
@@ -814,20 +780,8 @@
 .gif__2aa16 {
   @extend %gifPickerGif !optional;
 }
-.emptyHints-1KtTYR {
-  @extend %gifPickerEmptyHints !optional;
-}
-.placeholder-2Mfkde {
-  @extend %gifPickerPlaceholder !optional;
-}
 .emptyHintCard_f3e81a {
   @extend %gifPickerEmptyHintCard !optional;
-}
-.emptyHintFavorite-1cKHnJ {
-  @extend %gifPickerEmptyHintFavorite !optional;
-}
-.emptyHintText-3PF7lP {
-  @extend %gifPickerEmptyHintText !optional;
 }
 .endContainer__0c909 {
   @extend %gifPickerEndContainer !optional;
@@ -913,12 +867,6 @@
 .contentTitle_b7c496 {
   @extend %autocompleteTitle !optional;
 }
-.text-xs-medium-2LRpEj {
-  @extend %autocompleteContentMedium !optional;
-}
-.text-xs-normal-3SiVjE {
-  @extend %autocompleteContentNormal !optional;
-}
 .icon__95d3a {
   @extend %autocompleteIcon !optional;
 }
@@ -933,9 +881,6 @@
 }
 .descriptionDiscriminator__158a4 {
   @extend %autocompletedescriptiondiscriminator !optional;
-}
-.selector-2IcQBU {
-  @extend %autocompleteSelector !optional;
 }
 .clickable_f8437d {
   @extend %autocompleteSelectorSelected !optional;
@@ -976,8 +921,14 @@
 .optionPillKey_e84f41 {
   @extend %autocompleteOptionPillKey !optional;
 }
-.remainingOptions-2kCt8U {
-  @extend %autocompleteRemainingOptions !optional;
+.nitroTopDividerContainer__4c8fd {
+  @extend %autocompleteUpsellDividerContainer !optional;
+}
+.premiumEmoji__2dbd7 {
+  @extend %autocompleteUpsellEmoji !optional;
+}
+.premiumHeader_f78f97 {
+  @extend %autocompleteUpsellHeader !optional;
 }
 .spamBanner_adb1b9 {
   @extend %timeoutBar !optional;
@@ -988,6 +939,12 @@
 .iconContainer__21954 {
   @extend %timeoutIcon !optional;
 }
+.item__126a6 {
+  @extend %timeoutModalItem !optional;
+}
+.selectorButtonSelected__18241 {
+  @extend %timeoutModalSelected !optional;
+}
 .before_inlineCode__37e14 {
   @extend %inlineCodeBefore !optional;
 }
@@ -997,44 +954,17 @@
 .inlineCode_d702a4 {
   @extend %inlineCode !optional;
 }
-.welcomeMessage-3_Mcht {
-  @extend %welcomeMessage !optional;
-}
-.h1-1IDj26 {
-  @extend %welcomeMessageH1 !optional;
-}
-.itemContainer-WiE19S {
-  @extend %welcomeMessageItemContainer !optional;
-}
-.icon-2shpbb {
-  @extend %welcomeMessageIcon !optional;
-}
-.exclamation-1mi7Vi {
-  @extend %welcomeMessageIconExclamation !optional;
-}
-.share-1EA-d2 {
-  @extend %welcomeMessageIconShare !optional;
-}
-.mobile-3_KEmF {
-  @extend %welcomeMessageIconMobile !optional;
-}
-.twitter-1TN3uJ {
-  @extend %welcomeMessageIconTwitter !optional;
-}
-.base-34jWEe {
-  @extend %welcomeMessageBase !optional;
-}
-.wrapper-22ayhK {
-  @extend %badge !optional;
-}
 .numberBadge__50328 {
   @extend %numberBadge !optional;
 }
+.base__92a12 {
+  @extend %numberBadgeBase !optional;
+}
+.baseShapeRound__95d0f {
+  @extend %numberBadgeBaseShapeRound !optional;
+}
 .textBadge__45d79 {
   @extend %textBadge !optional;
-}
-.wrapper__87791 {
-  @extend %inboxBadge !optional;
 }
 .button_afdfd9 {
   @extend %button !optional;
@@ -1050,6 +980,9 @@
 }
 .lookLink__93965 {
   @extend %buttonLink !optional;
+}
+.lookBlank__7ca0a {
+  @extend %buttonBlank !optional;
 }
 .colorBrand_b2253e {
   @extend %buttonColorBrand !optional;
@@ -1177,37 +1110,8 @@
 .gameVerifiedIcon_bcd5fc {
   @extend %gameVerifiedIcon !optional;
 }
-.indicator-9QMksR {
-  @extend %indicator !optional;
-}
-.animationContainer-1fE4lX {
-  @extend %indicatorContainer !optional;
-}
-.animating-1VBoFQ {
-  @extend %indicatorAnimating !optional;
-}
-.notAnimating-2LOPSO {
-  @extend %indicatorNotAnimating !optional;
-}
-.innerCircle-2zWLZe {
-  @extend %indicatorCircleInner !optional;
-}
-.outerCircle-2Uqqis {
-  @extend %indicatorCircleOuter !optional;
-}
-.innerCircle-2zWLZe,
-.outerCircle-2Uqqis {
-  @extend %indicatorCircle !optional;
-}
-.top-1orLYG {
-  @extend %indicatorExclamationTop !optional;
-}
-.bottom-3Mou5l {
-  @extend %indicatorExclamationBottom !optional;
-}
-.top-1orLYG,
-.bottom-3Mou5l {
-  @extend %indicatorExclamation !optional;
+.redesignIconChildContainer__1bee6 {
+  @extend %guildIconChildContainer !optional;
 }
 .scrollerWrap_e0b973 {
   @extend %scrollerWrap !optional;
@@ -1220,9 +1124,6 @@
 }
 .mini_d6d84c {
   @extend %sliderMini !optional;
-}
-.input-1hjJtk {
-  @extend %sliderInput !optional;
 }
 .track_a48141 {
   @extend %sliderTrack !optional;
@@ -1289,18 +1190,6 @@
 }
 .premiumLabel_f2cd55 {
   @extend %premiumLabel !optional;
-}
-.card-20tMLf {
-  @extend %nitroSettingsCard !optional;
-}
-.bigPerkCard-1uwmWV {
-  @extend %nitroSettingsBig !optional;
-}
-.smallPerkCard-2sX_-- {
-  @extend %nitroSettingsSmall !optional;
-}
-.innerWrapper-Eo2E86 {
-  @extend %nitroSettingsInner !optional;
 }
 .icon__11372 {
   @extend %serverBoostIcon !optional;
@@ -1371,6 +1260,9 @@
 .blobContainer__5ee50 {
   @extend %guildContainer !optional;
 }
+.wrapper__3670f {
+  @extend %guildPillWrapper !optional;
+}
 .pill__6b31b {
   @extend %guildPill !optional;
 }
@@ -1385,6 +1277,12 @@
 }
 .icon__0cbed {
   @extend %guildIcon !optional;
+}
+.wrapper__3af0b {
+  @extend %guildSVGWrapper !optional;
+}
+.svg_ad7356 {
+  @extend %guildSVG !optional;
 }
 .childWrapper__01b9c {
   @extend %guildChildWrapper !optional;
@@ -1515,7 +1413,7 @@
 .divider_c09b64 {
   @extend %headerBarDivider !optional;
 }
-.content_dc3a33 {
+.content__96073 {
   @extend %headerBarModalContent !optional;
 }
 .search_ac353c {
@@ -1536,32 +1434,81 @@
 .searchAnswer_b452e7 {
   @extend %chatSearchAnswer !optional;
 }
-.libraryFilter_c21584 {
-  @extend %librarySearch !optional;
-}
-.focused__60a69 {
-  @extend %librarySearchFocused !optional;
-}
 .container__7712a {
-  @extend %librarySearchBar !optional;
+  @extend %headerSearchBar !optional;
 }
 .inner__999f6 {
-  @extend %librarySearchBarInner !optional;
+  @extend %headerSearchBarInner !optional;
 }
 .input__74754 {
-  @extend %librarySearchInput !optional;
+  @extend %headerSearchInput !optional;
 }
 .iconLayout__6d744 {
-  @extend %librarySearchIconLayout !optional;
+  @extend %headerSearchIconLayout !optional;
 }
 .icon__37cc1 {
-  @extend %librarySearchIcon !optional;
+  @extend %headerSearchIcon !optional;
 }
 .clear__76e04 {
-  @extend %librarySearchIconClear !optional;
+  @extend %headerSearchIconClear !optional;
+}
+.backButton__6a1f0 {
+  @extend %headerSearchBackButton !optional;
 }
 .applicationStore_fc7d76 {
-  @extend %nitroHomePage !optional;
+  @extend %nitro !optional;
+}
+.scroller_a1aadd {
+  @extend %nitroScroller !optional;
+}
+.mainPageScroller__12afb {
+  @extend %nitroPremiumScroller !optional;
+}
+.card_e97590 {
+  @extend %nitroCard !optional;
+}
+.cardDescription__46c9d {
+  @extend %nitroCardDescription !optional;
+}
+.seeAllPerksButton_c90d04 {
+  @extend %nitroSeePerksButton !optional;
+}
+.giftNitro__7b37a {
+  @extend %nitroGiftContainer !optional;
+}
+.textContainer_ebae6b {
+  @extend %nitroGiftTextContainer !optional;
+}
+.innerWrapper_c80bad {
+  @extend %nitroFooterInnerWrapper !optional;
+}
+.allPerksScroller__8740f {
+  @extend %nitroPerksScroller !optional;
+}
+.open__0960c {
+  @extend %nitroPerksScrollerOpen !optional;
+}
+.backButton__5b790 {
+  @extend %nitroPerksBackButton !optional;
+}
+.leftArrow__1d2d5
+.rightArrow__0633c {
+  @extend %nitroPerksArrows !optional;
+}
+.inactiveArrow_e0ef05 {
+  @extend %nitroPerksArrowInactive !optional;
+}
+.arrowIcon_c86bb8 {
+  @extend %nitroPerksArrowIcon !optional;
+}
+.cardProgressBar__0e60a {
+  @extend %nitroPerksProgressBar !optional;
+}
+.dot__5c7fb {
+  @extend %nitroPerksProgressDot !optional;
+}
+.selectedDot__3f4ad {
+  @extend %nitroPerksProgressDotSelected !optional;
 }
 .topPill__0cdf1 {
   @extend %topPill !optional;
@@ -1782,6 +1729,9 @@
 .mulitplePlaceholderUsername__5bd27 {
   @extend %memberPlaceholderUsernameMultiple !optional;
 }
+.addMembersIcon_e97261 {
+  @extend %addMembersIcon !optional;
+}
 .invite__2a93b {
   @extend %activityInvite !optional;
 }
@@ -1802,9 +1752,6 @@
 }
 .artwork__34afd {
   @extend %activityInviteArtwork !optional;
-}
-.artworkActionable__1d4f2 {
-  @extend %activityInviteArtworkActionable !optional;
 }
 .artworkNotActionable__3c8ef {
   @extend %activityInviteArtworkNotActionable !optional;
@@ -2062,12 +2009,6 @@ pre {
 .wrapperControlsHidden__143af {
   @extend %playerControlsHidden !optional;
 }
-.wrapperPaused__19ae3 {
-  @extend %playerPaused !optional;
-}
-.wrapperPlaying__6603b {
-  @extend %playerPlaying !optional;
-}
 .metadata__2d766 {
   @extend %playerMetadata !optional;
 }
@@ -2131,6 +2072,24 @@ pre {
 .bubble_f48089 {
   @extend %playerMediaBarBubble !optional;
 }
+.hoverButtonGroup__5b423 {
+  @extend %playerMediaDownload !optional;
+}
+.container__79822 {
+  @extend %voiceMessageContainer !optional;
+}
+.playing_eb5c63 {
+  @extend %voiceMessagePlaying !optional;
+}
+.playButtonContainer_d887d6 {
+  @extend %voiceMessagePlayButtonContainer !optional;
+}
+.playIcon_e14cf9 {
+  @extend %voiceMessagePlayButtonIcon !optional;
+}
+.ripple__74f0d {
+  @extend %voiceMessagePlayingRipple !optional;
+}
 .mouse-mode.full-motion {
   @extend %mouseModeFullMotion !optional;
 }
@@ -2152,14 +2111,26 @@ pre {
 .contents_f41bb2 {
   @extend %messageContent !optional;
 }
-.messageGroupBlocked__9a374 {
-  @extend %messageGroupBlocked !optional;
+.blockedSystemMessage_e58a4c {
+  @extend %messageBlockedSystemMessage !optional;
 }
-.revealed-1_RKsf {
-  @extend %messageGroupBlockedRevealed !optional;
+.blockedAction__27053 {
+  @extend %messageBlockedAction !optional;
 }
-.messageGroupBlockedBtn_a79738 {
-  @extend %messageGroupBlockedButton !optional;
+.expanded_be53d7 {
+  @extend %messageGroupBlockedExpanded !optional;
+}
+.blockedAction__27053 {
+  @extend %messageGroupBlockedAction !optional;
+}
+.blockedSystemMessage_e58a4c {
+  @extend %messageGroupBlockedSystemMessage !optional;
+}
+.blockedAction__27053 {
+  @extend %messageShowBlocked !optional;
+}
+.blockedSystemMessage_e58a4c {
+  @extend %messageBlockedSystemMessage !optional;
 }
 .header__39b23 {
   @extend %messageHeader !optional;
@@ -2176,8 +2147,17 @@ pre {
 .timestamp_cdbd93.alt__6c563 {
   @extend %messageTimestampAlt !optional;
 }
+.messageContent__21e69 {
+  @extend %messageContent !optional;
+}
 .container_aed774 {
   @extend %messageSystemContainer !optional;
+}
+.content__72fdc {
+  @extend %messageSystemContent !optional;
+}
+.tile_ebc93b {
+  @extend %messageInvalidGift !optional;
 }
 .repliedMessage_e2bf4a {
   @extend %messageReplied !optional;
@@ -2206,11 +2186,8 @@ pre {
 .inlineMediaEmbed__4270e {
   @extend %messageInlineMediaEmbed !optional;
 }
-.mentioned__58017 {
-  @extend %mentioned !optional;
-}
-.interactive {
-  @extend %mentionedInteractive !optional;
+.spoilerMarkdownContent__2b8f8 {
+  @extend %messageSpoiler !optional;
 }
 .markup_a7e664 {
   @extend %markup !optional;
@@ -2224,14 +2201,23 @@ pre {
 .mention {
   @extend %mention !optional;
 }
-.channelMention {
-  @extend %channelMention !optional;
+.mentioned__58017 {
+  @extend %mentioned !optional;
+}
+.interactive {
+  @extend %mentionedInteractive !optional;
+}
+.icon_ecf39b {
+  @extend %mentionIcon !optional;
 }
 .anchor_c8ddc0 {
   @extend %anchor !optional;
 }
 .anchorUnderlineOnHover__78236 {
   @extend %anchorUnderlineOnHover !optional;
+}
+.actionAnchor__584b2 {
+  @extend %anchorAction !optional;
 }
 .buttonContainer_dd4b62 {
   @extend %messageButtonContainer !optional;
@@ -2247,6 +2233,33 @@ pre {
 }
 .selected__63428 {
   @extend %messageButtonSelected !optional;
+}
+.bumpBox_cfd81a {
+  @extend %messagePublishBumpBox !optional;
+}
+.icon_c766f4 {
+  @extend %messagePublishIcon !optional;
+}
+.tagline_a404cb {
+  @extend %messagePublishTagline !optional;
+}
+.closeIcon__1f39d {
+  @extend %messagePublishCloseIcon !optional;
+}
+.hidePermanently_a71dd2 {
+  @extend %messagePublishPermanentHide !optional;
+}
+.embedCard__66fca {
+  @extend %messageAutomodCard !optional;
+}
+.footerContainer_a703d5 {
+  @extend %messageAutomodFooterContainer !optional;
+}
+.footerAction_fba33a {
+  @extend %messageAutomodFooterAction !optional;
+}
+.footerIcon__61cc7 {
+  @extend %messageAutomodFooterIcon !optional;
 }
 .blockquoteContainer_f24d1f {
   @extend %blockquoteContainer !optional;
@@ -2290,41 +2303,23 @@ pre {
 .active_f1266e {
   @extend %forumFollowActive !optional;
 }
-.container-2_J666 {
-  @extend %forumGetStartedContainer !optional;
-}
-.stepContainer-SaPPyG {
-  @extend %forumGetStartedStep !optional;
-}
 .staticToolbar__7ef7b {
   @extend %forumSettingsGuidelinesToolbar !optional;
+}
+.addTags_e01f9c {
+  @extend %forumSettingsGuidelinesAddTags !optional;
 }
 .spoilerMarkdownContent__2b8f8 {
   @extend %spoilerMarkdownContent !optional;
 }
-.hidden-3B-Rum {
+.hidden_f44e41 {
   @extend %spoilerHidden !optional;
 }
-.inlineContent-2YnoDy {
-  @extend %spoilerInlineContent !optional;
+.spoilerMarkdownContent__2b8f8 {
+  @extend %spoilerMarkdownContent !optional;
 }
-.spoilerContainer-3wsC0k {
-  @extend %spoilerContainer !optional;
-}
-.spoilerWarning-8ovW0v {
+.spoilerWarning_d02e2d {
   @extend %spoilerWarning !optional;
-}
-.spoiler-3aUoEX {
-  @extend %spoilerImage !optional;
-}
-.hiddenSpoilers-19m4Pg {
-  @extend %spoilerImageHidden !optional;
-}
-.spoilerEmbed__9a546 {
-  @extend %spoilerEmbed !optional;
-}
-.hiddenSpoiler-3pPzRF {
-  @extend %spoilerEmbedHidden !optional;
 }
 .keyboardShortcutsModal__74c71 {
   @extend %keyboardShortcutsModal !optional;
@@ -2335,7 +2330,7 @@ pre {
 .key__06fe6 {
   @extend %keybindShortcutKey !optional;
 }
-.inputWrapper-1YNMmM {
+.inputWrapper__934f5 {
   @extend %inputWrapper !optional;
 }
 .input_d266e7 {
@@ -2344,10 +2339,13 @@ pre {
 .focused_db7916 {
   @extend %inputFocused !optional;
 }
-.noBorder_bf418d {
-  @extend %inputNoBorder !optional;
+.inputField__79601 {
+  @extend %inputField !optional;
 }
-.modal__4f3da {
+.copyInput__3104b {
+  @extend %inputCopy !optional;
+}
+.modal__6a96b {
   @extend %modal !optional;
 }
 .root_a28985 {
@@ -2362,6 +2360,114 @@ pre {
 .footer_ceda43 {
   @extend %uploadModalFooter !optional;
 }
+.guildSidebar__8763f {
+  @extend %guildSidebarModal !optional;
+}
+.formFieldWrapper__52c9c {
+  @extend %formFieldWrapper !optional;
+}
+.settingsFormFieldWrapper_fa329e {
+  @extend %settingsFormFieldWrapper !optional;
+}
+.message__04d9f {
+  @extend %messageDeleteModal !optional;
+}
+.scroller__5fda0 {
+  @extend %reactionModalScroller !optional;
+}
+.reactors__20ab0 {
+  @extend %reactionModalReactors !optional;
+}
+.reactionDefault__792ef {
+  @extend %reactionModalDefault !optional;
+}
+.reactionSelected__249a7 {
+  @extend %reactionModalSelected !optional;
+}
+.colorStandard__5111e {
+  @extend %reactionModalColorStandard !optional;
+}
+.quickswitcher_a3d29a {
+  @extend %quickswitcher !optional;
+}
+.input__848cd {
+  @extend %quickswitcherInput !optional;
+}
+.scroller__52ae7 {
+  @extend %quickswitcherScroller !optional;
+}
+.result__25f11 {
+  @extend %quickswitcherResult !optional;
+}
+.wrapper__4f229 {
+  @extend %quickswitcherPing !optional;
+}
+.paymentNote_c68ae0 {
+  @extend %nitroPaymentNote !optional;
+}
+.wrapper_dae547 {
+  @extend %nitroPaymentWrapper !optional;
+}
+.body__59737 {
+  @extend %nitroPaymentBody !optional;
+}
+.table_e130b5 {
+  @extend %nitroPaymentTable !optional;
+}
+.planOptionDiscount__956f7 {
+  @extend %nitroPaymentDiscount !optional;
+}
+.cardNumberWrapper_d609e3 {
+  @extend %nitroPaymentCardInputWrapper !optional;
+}
+.cardInput__72fe9 {
+  @extend %nitroPaymentCardInput !optional;
+}
+.cardInputFocused__74be1 {
+  @extend %nitroPaymentCardInputFocused !optional;
+}
+.content__1b8a0 {
+  @extend %serverBoostPerkContent !optional;
+}
+.icon_ae3492 {
+  @extend %serverBoostPaymentIcon !optional;
+}
+.upsellFooter__9e85b {
+  @extend %serverBoostPaymentUpsellFooter !optional;
+}
+.perksList__35a93 {
+  @extend %serverBoostPaymentPerksList !optional;
+}
+.iconWrapper__9caa9 {
+  @extend %serverBoostPaymentIconWrapper !optional;
+}
+.actions_cba988 {
+  @extend %serverBoostPaymentActions !optional;
+}
+.contentWrapper__85d37 {
+  @extend %webInviteModalContentWrapper !optional;
+}
+.pillIconOnline_ab6089 {
+  @extend %webInviteModalOnline !optional;
+}
+.pillIconTotal__74a04 {
+  @extend %webInviteModalTotal !optional;
+}
+.activeIcon_e452f7 {
+  @extend %switchAccountsActive !optional;
+}
+.authorize__4ddfc {
+  @extend %authModal !optional;
+}
+.inApp__944f6 {
+  @extend %authModalInApp !optional;
+}
+.iconWrapper__54839 {
+  @extend %authModalScopeTimes !optional;
+}
+.footer__04ee2 {
+  @extend %authModalFooter !optional;
+}
 .userProfileModalOuter__3fe6b {
   @extend %userModalOuter !optional;
 }
@@ -2373,6 +2479,9 @@ pre {
 }
 .badgeList_c193e3 {
   @extend %userModalBadgeList !optional;
+}
+.badgeList_ef4131 {
+  @extend %userModalDMBadgeList !optional;
 }
 .overlayBackground__86b78 {
   @extend %userModalOverlayBackground !optional;
@@ -2449,9 +2558,6 @@ pre {
 .clearIcon__91449 {
   @extend %discoverSearchBoxClearIcon !optional;
 }
-.closeIcon-BMGxx0 {
-  @extend %discoverSearchBoxCloseIcon !optional;
-}
 .categoryItem_b1be5c {
   @extend %discoverCategoryItem !optional;
 }
@@ -2482,9 +2588,6 @@ pre {
 .splash_c32fae {
   @extend %discoverCardSplash !optional;
 }
-.fade-rdt5qH {
-  @extend %discoverCardFade !optional;
-}
 .guildInfo_ef4f03 {
   @extend %discoverGuildInfo !optional;
 }
@@ -2506,21 +2609,6 @@ pre {
 .dotOffline_a11803 {
   @extend %discoverGuildStatusOffline !optional;
 }
-.viewButton-3jDZqV {
-  @extend %discoverViewButton !optional;
-}
-.viewButtonVisible-2AtUPc {
-  @extend %discoverViewButtonVisible !optional;
-}
-.languageSelector-1hjSyO {
-  @extend %discoverLanguageSelector !optional;
-}
-.css-12hk9yc-control {
-  @extend %discoverLanguageSelectorControl !optional;
-}
-.separator-2xbLUz {
-  @extend %discoverSectionSeparator !optional;
-}
 .emptyContainer_a4bd05 {
   @extend %discoverEmptyResults !optional;
 }
@@ -2529,48 +2617,6 @@ pre {
 }
 .emptyHeader__309f2 {
   @extend %discoverEmptyTitle !optional;
-}
-.container-1YVRxo {
-  @extend %autocompletePopout !optional;
-}
-.positionTop-32hfih {
-  @extend %autocompletePopoutTop !optional;
-}
-.positionBottom-1iS7wM {
-  @extend %autocompletePopoutBottom !optional;
-}
-.autocompleteShadow-1aXK3x {
-  @extend %autocompletePopoutShadow !optional;
-}
-.autocompleteArrowWrapper-32-lNV {
-  @extend %autocompletePopoutArrowWrapper !optional;
-}
-.autocompleteArrow-2CRgr2 {
-  @extend %autocompletePopoutArrow !optional;
-}
-.header-PfVfAO {
-  @extend %autocompletePopoutHeader !optional;
-}
-.autocompleteHeaderBackground-4jKxaW {
-  @extend %autocompletePopoutHeaderBackground !optional;
-}
-.headerText-3k--Lk {
-  @extend %autocompletePopoutHeaderText !optional;
-}
-.input-2Zg2X0 {
-  @extend %autocompletePopoutInput !optional;
-}
-.sectionTag-euh3ZW {
-  @extend %autocompletePopoutSection !optional;
-}
-.autocompleteScroller-13i2_Y {
-  @extend %autocompletePopoutScroller !optional;
-}
-.row-3UUG_l {
-  @extend %autocompletePopoutRow !optional;
-}
-.selected-3LIQAc {
-  @extend %autocompletePopoutSelected !optional;
 }
 .container__0810b {
   @extend %connectionInfo !optional;
@@ -2581,11 +2627,17 @@ pre {
 .secured__615be {
   @extend %connectionInfoSecured !optional;
 }
-.itemSubMenu-1vN_Yn {
-  @extend %contextMenuItemSubMenu !optional;
-}
 .emojiPicker_b65ce9 {
   @extend %emojiPicker !optional;
+}
+.contentWrapper__321ed {
+  @extend %emojiPickerWrapper !optional;
+}
+.drawerSizingWrapper__30274 {
+  @extend %emojiPickerSizer !optional;
+}
+.navButtonActive__735cb {
+  @extend %emojiPickerNavButton !optional;
 }
 .header__55964 {
   @extend %emojiPickerHeader !optional;
@@ -2626,6 +2678,9 @@ pre {
 .categoryList_f8c48f {
   @extend %emojiCategoryList !optional;
 }
+.wrapper_cd625e {
+  @extend %emojiCategoryListWrapper !optional;
+}
 .scroller_e89578 {
   @extend %emojiCategoryScroller !optional;
 }
@@ -2647,14 +2702,29 @@ pre {
 .unicodeShortcut__1dd6b {
   @extend %emojiCategoryUnicodeShortcut !optional;
 }
+.categoryItemLockIconContainer__9e6a3 {
+  @extend %emojiCategoryLockIconContainer !optional;
+}
+.premiumPromo__2d678 {
+  @extend %emojiPickerPremiumPromo !optional;
+}
+.premiumPromoClose__11b8f {
+  @extend %emojiPickerPremiumPromoClose !optional;
+}
+.premiumPromoTitle__68b72 {
+  @extend %emojiPickerPremiumPromoTitle !optional;
+}
+.premiumRetentionNotice__7e7c4 {
+  @extend %emojiPickerPremiumRetentionNotice !optional;
+}
+.upsell__780f6 {
+  @extend %emojiPickerPremiumUpsell !optional;
+}
+.upsellContainer__3c02a {
+  @extend %emojiPickerPremiumUpsellContainer !optional;
+}
 .popout__08442 {
   @extend %groupInvitePopout !optional;
-}
-.header-1zd7se {
-  @extend %groupInvitePopoutHeader !optional;
-}
-.title-3hptVQ {
-  @extend %groupInvitePopoutTitle !optional;
 }
 .subtitle__593cd {
   @extend %groupInvitePopoutSubtitle !optional;
@@ -2734,9 +2804,6 @@ pre {
 .check__8d1bd {
   @extend %menuPopoutCheck !optional;
 }
-.container-3cGP6G {
-  @extend %messageOptions !optional;
-}
 .layerContainer_d5a653 {
   @extend %layerContainer !optional;
 }
@@ -2791,6 +2858,9 @@ pre {
 .queryContainer_c359fe {
   @extend %searchPopoutQueryContainer !optional;
 }
+.keybindShortcutSearchPopout__1e953 {
+  @extend %searchPopoutKeyboardShortcut !optional;
+}
 .focused_f9cf2c {
   @extend %searchPopoutQueryContainerFocused !optional;
 }
@@ -2799,9 +2869,6 @@ pre {
 }
 .queryShortcut__88ea5 {
   @extend %searchPopoutQueryShortcut !optional;
-}
-.keybindShortcutSearchPopout-pt_bn5 {
-  @extend %searchPopoutKeybindShortcut !optional;
 }
 .user__97b4c {
   @extend %searchPopoutOptionUser !optional;
@@ -2824,7 +2891,6 @@ pre {
 .datePicker__94673 {
   @extend %searchPopoutDatePicker !optional;
 }
-
 .datePickerHint__7cc9b {
   @extend %searchPopoutDatePickerHint !optional;
 }
@@ -2909,24 +2975,6 @@ pre {
 .react-datepicker__day--sun {
   @extend %datepickerDaySun !optional;
 }
-.popout-2sKjHu {
-  @extend %selectPopout !optional;
-}
-.filterBrowsingSelectPopout-2kjxuc {
-  @extend %selectPopoutFilterBrowsing !optional;
-}
-.option-1mJRMP {
-  @extend %selectPopoutOption !optional;
-}
-.optionActive-KkAdqq {
-  @extend %selectPopoutOptionActive !optional;
-}
-.optionFocused-8MflSE {
-  @extend %selectPopoutOptionFocused !optional;
-}
-.optionNormal-12VR9V {
-  @extend %selectPopoutOptionNormal !optional;
-}
 .statusItem__3440f {
   @extend %statusPickerItem !optional;
 }
@@ -2936,17 +2984,30 @@ pre {
 .description__76091 {
   @extend %statusPickerDescription !optional;
 }
-.status-2DiCMd {
+.status__1c26d {
   @extend %statusPickerIcon !optional;
 }
 .userProfileOuterUnthemed__48723 {
   @extend %userProfileOuterUnthemed !optional;
+}
+.userPanelInnerThemed__1804b {
+  @extend %userProfileDMInnerThemed !optional;
+}
+.userPanelOverlayBackground__34fc8 {
+  @extend %userProfileDMOverlayBackground !optional;
+}
+.actionColor__21cca {
+  @extend %userProfileActionColor !optional;
 }
 .userPopoutOuter_d739b2 {
   @extend %userPopoutOuter !optional;
 }
 .userPopoutInner_f545a3 {
   @extend %userPopoutInner !optional;
+}
+.userProfileInnerThemedPremiumWithoutBanner__703b1,
+.userProfileInnerThemedWithBanner_d5f991 {
+  @extend %userPopoutInnerThemed !optional;
 }
 .popoutBanner__9f5b9 {
   @extend %userPopoutBanner !optional;
@@ -2963,19 +3024,19 @@ pre {
 .userPopoutOverlayBackground_d8afa4 {
   @extend %userPopoutOverlayBackground !optional;
 }
+.profileCustomizationPreview_ccc6a9 {
+  @extend %userPopoutCustomizationPreview !optional;
+}
 .buttonColor__01bf8 {
   @extend %userPopoutButtonColor !optional;
 }
 .roles__74a2b {
   @extend %userPopoutRoles !optional;
 }
-.note-Go5ZP2 {
-  @extend %userPopoutNote !optional;
-}
 .textarea_c5a7a3 {
   @extend %userPopoutNoteTextArea !optional;
 }
-.messageInputContainer-2rGDH8 {
+.messageInputContainer__768e6 {
   @extend %userPopoutMessageInputContainer !optional;
 }
 .errorPage_da3c8d {
@@ -2999,15 +3060,6 @@ pre {
 .links_ab4aa2 {
   @extend %loadingLinks !optional;
 }
-.path-lhsLSV {
-  @extend %loadingPath !optional;
-}
-.path2-F-M5gP {
-  @extend %loadingPath2 !optional;
-}
-.path3-3tVOpU {
-  @extend %loadingPath3 !optional;
-}
 .searchResultsWrap__9f374 {
   @extend %searchResultsWrap !optional;
 }
@@ -3020,44 +3072,17 @@ pre {
 .totalResults__695d3 {
   @extend %searchTotalResults !optional;
 }
-.resultsWrapper-hoiXCY {
-  @extend %searchResultsWrapper !optional;
-}
-.searchResults-2J8dju {
-  @extend %searchResults !optional;
-}
-.channelName-3w2Y3c {
-  @extend %searchChannelName !optional;
-}
 .searchResult_dcd237 {
   @extend %searchResult !optional;
-}
-.expanded-v2Szsz {
-  @extend %searchResultExpanded !optional;
-}
-.searchResultMessage-2VxO12 {
-  @extend %searchResultMessage !optional;
-}
-.hit-NLlWXA {
-  @extend %searchResultMessageHit !optional;
-}
-.sibling-3tUBeh {
-  @extend %searchResultMessageSibling !optional;
-}
-.before-1x1q5S {
-  @extend %searchResultMessageBefore !optional;
-}
-.after-2g0jjc {
-  @extend %searchResultMessageAfter !optional;
-}
-.actionButtons-14P9IC {
-  @extend %searchResultActionButtons !optional;
 }
 .button_f8244b {
   @extend %searchResultJumpButton !optional;
 }
 .highlight {
   @extend %searchResultHighlight !optional;
+}
+.resultsBlocked_a701cf {
+  @extend %searchResultBlocked !optional;
 }
 .contentRegion__0bec1 {
   @extend %settingsContentRegion !optional;
@@ -3095,8 +3120,29 @@ pre {
 .card__4dc22 {
   @extend %settingsCard !optional;
 }
-.cardWrapper_bc8d2a {
-  @extend %settingsCardWrapper !optional;
+.outline_cb0aed {
+  @extend %settingsCardOutline !optional;
+}
+.lookFilled__3dba3 {
+  @extend %settingsLookFilled !optional;
+}
+.select__0eb48 {
+  @extend %settingsDropdownSelect !optional;
+}
+.popout_a6e77f {
+  @extend %settingsDropdownPopout !optional;
+}
+.option_be8b2e {
+  @extend %settingsDropdownOption !optional;
+}
+.multi__8d15f {
+  @extend %settingsDropdownMulti !optional;
+}
+.selectedIcon__4b0ba {
+  @extend %settingsDropdownOptionSelectedIcon !optional;
+}
+.focused_a2f507 {
+  @extend %settingsDropdownOptionFocused !optional;
 }
 .customColorPicker__3cb6a {
   @extend %settingsColorPickerCustom !optional;
@@ -3131,13 +3177,16 @@ pre {
 .separator_fdbcfd {
   @extend %settingsSeparator !optional;
 }
+.serverBoostTabItem_b19426 {
+  @extend %settingsServerBoostTabItem !optional;
+}
 .socialLinks_c1fc99 {
   @extend %settingsSocialLinks !optional;
 }
 .link_b006df {
   @extend %settingsSocialLink !optional;
 }
-.guildFeatureAvailabilityIndicator__3fb19 {
+.availabilityIndicator__32891 {
   @extend %guildFeatureAvailabilityIndicator !optional;
 }
 .roleRow_c357d5 {
@@ -3155,6 +3204,12 @@ pre {
 .titleContainer_e558ff {
   @extend %guildSettingsRoleBackContainer !optional;
 }
+.list__41249 {
+  @extend %guildSettingsRoleList !optional;
+}
+.row__5f051 {
+  @extend %guildSettingsRoleListRow !optional;
+}
 .header__63c59 {
   @extend %guildSettingsRoleHeader !optional;
 }
@@ -3167,14 +3222,373 @@ pre {
 .previewContainer_c7e80d {
   @extend %guildSettingsRoleIconPreview !optional;
 }
-.upsellContainer-1Ml-W5 {
-  @extend %guildSettingsRoleUpsell !optional;
+.container__9bb08 {
+  @extend %guildSettingsRoleViewAsDropdown !optional;
 }
-.upsellFooter-2aN0L_ {
-  @extend %guildSettingsRoleUpsellFooter !optional;
+.emojiRow__4661c {
+  @extend %guildSettingsEmojiCard !optional;
 }
-.activityUserPopout_c7e67d,
-.activityProfile__61b44 {
+.emojiRow__4661c {
+  @extend %guildSettingsEmojiRow !optional;
+}
+.emojiRemove_b299a6 {
+  @extend %guildSettingsEmojiRemove !optional;
+}
+.emojiAliasInput_dd55f7 {
+  @extend %guildSettingsEmojiAliasInput !optional;
+}
+.emojiInput__4fe54 {
+  @extend %guildSettingsEmojiInput !optional;
+}
+.emojiAliasPlaceholder__71733 {
+  @extend %guildSettingsEmojiAliasPlaceholder !optional;
+}
+.wrapper__93f27 {
+  @extend %guildSettingsStickersUploadCard !optional;
+}
+.tierLock__3e43d {
+  @extend %guildSettingsStickersTierLock !optional;
+}
+.changelog__6d46d {
+  @extend %guildSettingsSafetyChangeLog !optional;
+}
+.safetyChecklist__826c8 {
+  @extend %guildSettingsSafetyChecklist !optional;
+}
+.valuePill__9d21a {
+  @extend %guildSettingsSafetyPill !optional;
+}
+.scrollerContainer_c3503a {
+  @extend %guildSettingsBanContainer !optional;
+}
+.bannedUser__38b44 {
+  @extend %guildSettingsBannedUser !optional;
+}
+.descriptionBox_cca0c3 {
+  @extend %guildSettingsTemplateDescription !optional;
+}
+.simpleItemWrapper__2a0a0 {
+  @extend %guildSettingsSafetyItemWrapper !optional;
+}
+.upsellContainer__978df {
+  @extend %guildSettingsCommunityUpsell !optional;
+}
+.upsellFooter__63475 {
+  @extend %guildSettingsCommunityUpsellFooter !optional;
+}
+.guildDetails_fc2c63 {
+  @extend %guildSettingsCommunityGuildDetails !optional;
+}
+.featureCard__0a441 {
+  @extend %guildSettingsCommunityFeatureCard !optional;
+}
+.featureIcon__48a2c {
+  @extend %guildSettingsCommunityFeatureIcon !optional;
+}
+.row_f4c450 {
+  @extend %guildSettingsCommunityRow !optional;
+}
+.analyticsCard_a976ba {
+  @extend %guildSettingsInsightsAnalyticsCard !optional;
+}
+.developerPortalCtaWrapper__21172 {
+  @extend %guildSettingsInsightsDeveloperPortal !optional;
+}
+.notEnoughMembersError__96545 {
+  @extend %guildSettingsInsightsNotEnoughMembers !optional;
+}
+.memberInsightsContainer_a79381 {
+  @extend %guildSettingsInsightsMemberInsights !optional;
+}
+.insightsActions_f32a84 {
+  @extend %guildSettingsInsightsActions !optional;
+}
+.checklist__88646 {
+  @extend %guildSettingsDiscoveryChecklist !optional;
+}
+.header_d08072 {
+  @extend %guildSettingsDiscoveryHeader !optional;
+}
+.separator__26ad8 {
+  @extend %guildSettingsDiscoverySeparator !optional;
+}
+.enableContainer__0945b {
+  @extend %guildSettingsWelcomeEnable !optional;
+}
+.previewContainer_b0f5b4 {
+  @extend %guildSettingsWelcomePreview !optional;
+}
+.editCircle_fb533c {
+  @extend %guildSettingsWelcomeEditCircle !optional;
+}
+.welcomeChannel__0122f {
+  @extend %guildSettingsWelcomeChannel !optional;
+}
+.channelIcon__2b0ed {
+  @extend %guildSettingsWelcomeChannelIcon !optional;
+}
+.background__3dd67 {
+  @extend %guildSettingsBoostBackground !optional;
+}
+.tierInProgress_f08e8b {
+  @extend %guildSettingsBoostTierInProgress !optional;
+}
+.tierHeaderLocked__4d099 {
+  @extend %guildSettingsBoostTierLocked !optional;
+}
+.tierHeaderUnlocked_cc60fa {
+  @extend %guildSettingsBoostTierUnlocked !optional;
+}
+.tierBody__615a1 {
+  @extend %guildSettingsBoostTierBody !optional;
+}
+.textBadge__9e179 {
+  @extend %automodBadge !optional;
+}
+.editCard_dfa091 {
+  @extend %automodEditCard !optional;
+}
+.active_ef2ec5 {
+  @extend %automodEditCardActive !optional;
+}
+.toggled_bf7bde {
+  @extend %automodEditCardToggled !optional;
+}
+.ruleIconContainer_baf164 {
+  @extend %automodRuleIconContainer !optional;
+}
+.ruleIcon__44d2b {
+  @extend %automodRuleIcon !optional;
+}
+.actionContainer_d21d10 {
+  @extend %automodActionTag !optional;
+}
+.actionIcon__2a5f8 {
+  @extend %automodActionIcon !optional;
+}
+.actionTextHeader__87eb9 {
+  @extend %automodActionText !optional;
+}
+.stepCountIcon_a27a70 {
+  @extend %automodStepIcon !optional;
+}
+.stepperContainer__053f4 {
+  @extend %automodStepperCOntainer !optional;
+}
+.mentionLimitContainer__0f0ff,
+.keywordListContainer_fdf41c,
+.actionContainer__51bd9 {
+  @extend %automodContentCard !optional;
+}
+.collapseable__71e46 {
+  @extend %automodCollapseableCard !optional;
+}
+.toggled_bb1607 {
+  @extend %automodCollapseableCardToggled !optional;
+}
+.container__74689 {
+  @extend %automodCollapseableHeaderContainer !optional;
+}
+.clickableContainer__69013 {
+  @extend %automodCollapseableHeaderClickable !optional;
+}
+.groupCollapsedContainer_d7de68 {
+  @extend %automodCollapsedContainer !optional;
+}
+.pointer_d95271 {
+  @extend %automodCollapseablePointer !optional;
+}
+.backgroundModifierContainer__73a0a {
+  @extend %automodCollapseableRadioBackground !optional;
+}
+.selected__93d53 {
+  @extend %automodCollapseableRadioSelected !optional;
+}
+.keywordsTextArea_d5eadb {
+  @extend %automodKeywordsTextArea !optional;
+}
+.textArea__3f404 {
+  @extend %automodRegexTextArea !optional;
+}
+.resultsListContainer__4ec00 {
+  @extend %automodDropdown !optional;
+}
+.searchRowLabel_b64d40 {
+  @extend %automodDropdownRowLabel !optional;
+}
+.channelIcon__801cb {
+  @extend %automodDropdownChannelIcon !optional;
+}
+.auditLog__6c805 {
+  @extend %guildSettingsAuditLog !optional;
+}
+.header_e08fd2 {
+  @extend %guildSettingsAuditHeader !optional;
+}
+.headerExpanded__03c29 {
+  @extend %guildSettingsAuditHeaderExpanded !optional;
+}
+.divider__1505d {
+  @extend %guildSettingsAuditDivider !optional;
+}
+.changeDetails_ecd760 {
+  @extend %guildSettingsAuditChangeDetails !optional;
+}
+.testimonialHeroContainer__4a355 {
+  @extend %guildSettingsOnboardingTestimonialContainer !optional;
+}
+.quotes__35cf8 {
+  @extend %guildSettingsOnboardingTestimonialQuotes !optional;
+}
+.testimonial__1b63f {
+  @extend %guildSettingsOnboardingTestimonial !optional;
+}
+.upsellPreview_e0cb61 {
+  @extend %guildSettingsOnboardingUpsell !optional;
+}
+.previewListItem__4f725 {
+  @extend %guildSettingsOnboardingUpsellList !optional;
+}
+.selected__2d410 {
+  @extend %guildSettingsOnboardingUpsellListSelected !optional;
+}
+.checkboxCircle_aed363 {
+  @extend %guildSettingsOnboardingUpsellCheckboxCircle !optional;
+}
+.checkbox__9abca {
+  @extend %guildSettingsOnboardingUpsellCheckbox !optional;
+}
+.educationUpsell_ee1637 {
+  @extend %onboardingEduPopout !optional;
+}
+.educationUpsellArrow__65907 {
+  @extend %onboardingEduPopoutArrow !optional;
+}
+.progressBarContainer_f5600f {
+  @extend %onboardingProgressBarContainer !optional;
+}
+.progressBar__02515 {
+  @extend %onboardingProgressBar !optional;
+}
+.progressBarCurrent__44486 {
+  @extend %onboardingProgressBarCurrent !optional;
+}
+.container_ecf1d0 {
+  @extend %onboardingFooterContainer !optional;
+}
+.channelRow__33fcb {
+  @extend %onboardingChannelRow !optional;
+}
+.disabled__7b158 {
+  @extend %onboardingChannelRowDisabled !optional;
+}
+.separator_a693be {
+  @extend %onboardingChannelRowSeparator !optional;
+}
+.header__8e9c1 {
+  @extend %onboardingChannelListHeader !optional;
+}
+.container__9e6a7 {
+  @extend %onboardingChannelListHeaderContainer !optional;
+}
+.progressBar_f4b358 {
+  @extend %onboardingChannelListProgressBar !optional;
+}
+.icon__3117c {
+  @extend %onboardingChannelListProgressIcon !optional;
+}
+.channelList__4e836 {
+  @extend %onboardingChannelList !optional;
+}
+.chattableIndicator__320a3 {
+  @extend %onboardingChannelChattableIndicator !optional;
+}
+.channelCoverage__3b43c {
+  @extend %onboardingChannelCoverage !optional;
+}
+.coverageProgress__7696d {
+  @extend %onboardingChannelCoverageProgress !optional;
+}
+.channelCoverageDetails__1b72e {
+  @extend %onboardingChannelCoverageDetails !optional;
+}
+.channelPill_c6644a {
+  @extend %onboardingChannelCoveragePill !optional;
+}
+.addPrompt_d0c3a2 {
+  @extend %onboardingAddQuestion !optional;
+}
+.plusIcon__5736c {
+  @extend %onboardingAddQuestionIcon !optional;
+}
+.container_bc63f8 {
+  @extend %onboardingQuestionContainer !optional;
+}
+.example__9c5a6 {
+  @extend %onboardingQuestionExample !optional;
+}
+.resultsListContainer__4ec00 {
+  @extend %onboardingQuestionDropdown !optional;
+}
+.channelIcon__801cb {
+  @extend %onboardingQuestionDropdownChannelIcon !optional;
+}
+.badExampleIcon__70659 {
+  @extend %onboardingActionExampleBadIcon !optional;
+}
+.actionItem__36958 {
+  @extend %onboardingActionItem !optional;
+}
+.resourceChannel__1f331 {
+  @extend %onboardingResourceChannel !optional;
+}
+.actionItemEmojiWrapper__09da8 {
+  @extend %onboardingActionItemIcon !optional;
+}
+.addActionItem__209df {
+  @extend %onboardingActionAdd !optional;
+}
+.pillContainer_e97d2d {
+  @extend %onboardingActionPreviewPill !optional;
+}
+.pillItemSelected__3dd13 {
+  @extend %onboardingActionPreviewPillSelected !optional;
+}
+.reviewHeader__0a240 {
+  @extend %onboardingReviewHeader !optional;
+}
+.onboardingStepContainer__4a9d0 {
+  @extend %onboardingReviewStepContainer !optional;
+}
+.iconContainer_ccedf9 {
+  @extend %onboardingReviewIconContainer !optional;
+}
+.channelIcon__7901b {
+  @extend %onboardingReviewIcon !optional;
+}
+.card_bc6ee2 {
+  @extend %guildSettingsSubsCard !optional;
+}
+.howItWorksContainer_ef4386 {
+  @extend %guildSettingsSubsStepsContainer !optional;
+}
+.howItWorksImageContainer__91f71 {
+  @extend %guildSettingsSubsStepsImageContainer !optional;
+}
+.earningsPreviewContainer__775cb {
+  @extend %guildSettingsSubsEarningsPreviewContainer !optional;
+}
+.avatarCard_edc99c {
+  @extend %guildSettingsSubsAvatarCard !optional;
+}
+.emojisContainer__68736 {
+  @extend %guildSettingsSubsEmojisContainer !optional;
+}
+.viewServerButton__1ce42 {
+  @extend %guildSettingsSubsViewServerButton !optional;
+}
+.activityUserPopoutV2__32328,
+.activityProfileV2__4de28 {
   @extend %activity !optional;
 }
 .headerText__7d203 {
@@ -3185,9 +3599,6 @@ pre {
 }
 .activityName__47e51 {
   @extend %activityName !optional;
-}
-.textHover-3f_j3D {
-  @extend %activityNameTextHover !optional;
 }
 .bodyLink__0ab7c {
   @extend %activityBodyLink !optional;
@@ -3201,14 +3612,14 @@ pre {
 .mask__1979f {
   @extend %avatarMask !optional;
 }
+.cursorDefault_e4f616 {
+  @extend %avatarCursorDefault !optional;
+}
 .avatar__6337f {
   @extend %avatarImage !optional;
 }
 .avatar__08316 {
   @extend %avatarLarge !optional;
-}
-.avatarOffline-3GF27z {
-  @extend %avatarOffline !optional;
 }
 .botTag__4211a {
   @extend %botTag !optional;
@@ -3218,9 +3629,6 @@ pre {
 }
 .role__631a3 {
   @extend %role !optional;
-}
-.roleWrapper-2IhvNd {
-  @extend %roleWrapper !optional;
 }
 .roleCircle_bae511 {
   @extend %roleCircle !optional;
@@ -3237,11 +3645,8 @@ pre {
 .addButton_c648bf {
   @extend %roleAddButton !optional;
 }
-.pointerEvents-9SZWKj {
-  @extend %statusPointerEvents !optional;
-}
-.cursorDefault--wfhy5 {
-  @extend %statusCursorDefault !optional;
+.container_d27846 {
+  @extend %roleAssignPopout !optional;
 }
 .loading__30066 {
   @extend %loading !optional;
@@ -3264,9 +3669,6 @@ pre {
 .separator__7538d {
   @extend %replySeperator !optional;
 }
-.hasReply-16cIUP {
-  @extend %textAreaHasReply !optional;
-}
 .replying_d7b6ad {
   @extend %replyingToIndicator !optional;
 }
@@ -3282,38 +3684,184 @@ pre {
 .radioIconForeground__99b9b {
   @extend %radioIconChecked !optional;
 }
+.accountProfileCard__22589 {
+  @extend %userSettingsAccountProfileCard !optional;
+}
+.background_b61fcc {
+  @extend %userSettingsAccountProfileBackground !optional;
+}
+.fieldList_aab0de {
+  @extend %userSettingsAccountProfileFields !optional;
+}
+.avatar__6c108 {
+  @extend %userSettingsAccountProfileAvatar !optional;
+}
+.premiumFeatureBorder__9bbb3 {
+  @extend %userSettingsProfilePremiumBorder !optional;
+}
+.premiumBackground__4ce97 {
+  @extend %userSettingsProfilePremiumBackground !optional;
+}
+.upsellOverlayContainer__08979 {
+  @extend %userSettingsProfileUpsellOverlayContainer !optional;
+}
+.upsellOverlay__688e8 {
+  @extend %userSettingsProfileUpsellOverlay !optional;
+}
+.container__6968f,
+.container__9c82e,
+.container__9f90c {
+  @extend %userSettingsFamilyContainers !optional;
+}
+.box__6431e {
+  @extend %userSettingsFamilyBox !optional;
+}
+.circle__7dd22 {
+  @extend %userSettingsFamilyCircle !optional;
+}
+.iconContainer__82920 {
+  @extend %userSettingsFamilyIconContainer !optional;
+}
+.row_c1b980 {
+  @extend %userSettingsFamilyRow !optional;
+}
+.authedApp__51b26 {
+  @extend %userSettingsAuthedApp !optional;
+}
+.sessionIcon__540be {
+  @extend %userSettingsDevicesIcon !optional;
+}
+.connectContainer__8050b {
+  @extend %userSettingsConnectionsContainer !optional;
+}
+.accountButtonInner__80e3a,
+.accountBtnInner_fe9b67 {
+  @extend %userSettingsConnectionsButtonInner !optional;
+}
+.giftCard__30972 {
+  @extend %userSettingsNitroGiftCard !optional;
+}
+.borderRect__8ec00 {
+  @extend %userSettingsBoostHeaderBorderRect !optional;
+}
+.header_a2ba3b {
+  @extend %userSettingsBoostHeader !optional;
+}
+.guildContainer__9d362 {
+  @extend %userSettingsBoostGuildContainer !optional;
+}
+.wrapper__0df00 {
+  @extend %userSettingsBoostGuildSearchWrapper !optional;
+}
+.boosterRecognitionCard__5fc19 {
+  @extend %userSettingsBoostRecognitionCard !optional;
+}
+.faq__1d001 {
+  @extend %userSettingsBoostFAQ !optional;
+}
+.noItemsIcon_b1e42b,
+.noItemsIcon__38ca2 {
+  @extend %userSettingsSubsNoItemsIcons !optional;
+}
+.detailsBlock__1191c {
+  @extend %userSettingsSubsPayDetailsBlock !optional;
+}
+.premiumSubscriptionAccountCredit__6bab4 {
+  @extend %userSettingsSubsAccountCredit !optional;
+}
+.defaultIndicator__855a2 {
+  @extend %userSettingsBillingIndicator !optional;
+}
+.description__75831,
+.descriptionWrapper__0d577 {
+  @extend %userSettingsBillingMethodText !optional;
+}
+.paymentPane__9cf01 {
+  @extend %userSettingsBillingPaymentPane !optional;
+}
+.paginator_e620d3 {
+  @extend %userSettingsBillingPaginator !optional;
+}
+.bottomDivider_a59d97 {
+  @extend %userSettingsBillingBottomDivider !optional;
+}
+.hoverablePayment__3ea24 {
+  @extend %userSettingsBillingHoverablePayment !optional;
+}
+.payment__7d702 {
+  @extend %userSettingsBillingPayment !optional;
+}
+.expandedInfo__47bad {
+  @extend %userSettingsBillingExpandedInfo !optional;
+}
+.selectionCircle_f4288e {
+  @extend %userSettingsAppearanceSelectionCircle !optional;
+}
+.checkmark__1577e {
+  @extend %userSettingsAppearanceCheckmart !optional;
+}
+.previewMessage__1075c {
+  @extend %userSettingsAccessibilityMsgPreview !optional;
+}
 .micTest__30846 {
-  @extend %micTest !optional;
+  @extend %userSettingsMicTest !optional;
 }
 .container__6d33c {
-  @extend %micTestContainer !optional;
+  @extend %userSettingsMicTestContainer !optional;
 }
 .progress__2cc1d {
-  @extend %micTestProgress !optional;
+  @extend %userSettingsMicTestProgress !optional;
 }
 .notches__065e9 {
-  @extend %micTestNotches !optional;
+  @extend %userSettingsMicTestNotches !optional;
 }
-.sliderBar-2s16ej {
-  @extend %inputSensitivitySliderBar !optional;
-}
-.speaking-2Crrvt {
-  @extend %inputSensitivitySpeaking !optional;
+.soundButtonSettingContainer__548af {
+  @extend %userSettingsEntranceSoundButton !optional;
 }
 .cameraWrapper__1ee6d {
-  @extend %cameraWrapper !optional;
-}
-.media-engine-video {
-  @extend %mediaEngineVideo !optional;
+  @extend %userSettingsVideoCameraWrapper !optional;
 }
 .backgroundOption__745bb {
-  @extend %videoBgOption !optional;
+  @extend %userSettingsVideoBgOption !optional;
 }
 .backgroundOptionRing__1f209 {
-  @extend %videoBgOptionRing !optional;
+  @extend %userSettingsVideoBgOptionRing !optional;
 }
 .backgroundOptionInner__1477f {
-  @extend %videoBgOptionInner !optional;
+  @extend %userSettingsVideoBgOptionInner !optional;
+}
+.nowPlaying__353c3 {
+  @extend %userSettingsOverlayNowPlaying !optional;
+}
+.wrapper__4beb8 {
+  @extend %userSettingsOverlayWrapper !optional;
+}
+.option_a0c054 {
+  @extend %userSettingsOverlayOption !optional;
+}
+.selected_ea51d6 {
+  @extend %userSettingsOverlaySelected !optional;
+}
+.container__0c807 {
+  @extend %userSettingsKeybindContainer !optional;
+}
+.disabled__8d382 {
+  @extend %userSettingsKeybindDisabled !optional;
+}
+.recording__97366 {
+  @extend %userSettingsKeybindRecording !optional;
+}
+.notDetected__2a0c9 {
+  @extend %userSettingsActivityNotDetected !optional;
+}
+.addGamePopout_e4ca8f {
+  @extend %userSettingsActivityAddGame !optional;
+}
+.game__19f4b {
+  @extend %userSettingsActivityGame !optional;
+}
+.gameNameInput_e25dd8 {
+  @extend %userSettingsActivityGameNameInput !optional;
 }
 .auto_a48086 {
   @extend %scrollbarAuto !optional;
@@ -3324,41 +3872,56 @@ pre {
 .none__51a8f {
   @extend %scrollbarNone !optional;
 }
-.segmentContainer-2dq0ta {
+.segmentControl_b89f83 {
   @extend %screenshareSegmentContainer !optional;
 }
-.segmentControlOption-3MnJdT {
+.segmentControlOption__84fb6 {
   @extend %screenshareSegmentControlOption !optional;
 }
-.selected-2xa993 {
+.cta__69e2a {
+  @extend %watchStream !optional;
+}
+.status__42e87.interactive__7ee97 {
+  @extend %myScreenControlOptions !optional;
+}
+.overlayTitle_a9f7c6 {
+  @extend %myScreen !optional;
+}
+.videoWrapper_b42a4f {
+  @extend %streamStillRunning !optional;
+}
+.tabItemSelected__3dfe7 {
   @extend %screenshareSegmentControlSelected !optional;
 }
-.tile-3POX2m {
+.tile__46960 {
   @extend %screenshareTile !optional;
 }
-.sourceThumbnail-ERDcZE {
+.sourceThumbnail__21c87 {
   @extend %screenshareSourceThumbnail !optional;
 }
-.selected-1i-g6T {
+.selected__26467 {
   @extend %screenshareSourceSelected !optional;
 }
-.card-m7VgZ8 {
+.card__7756d {
   @extend %screenshareCard !optional;
+}
+.enhancedBanner__09743 {
+  @extend %screenshareUpsell !optional;
+}
+.selectorButton_c6ae93 {
+  @extend %screenshareSettingsSelector !optional;
+}
+.selectorButtonSelected_fbe8fc {
+  @extend %screenshareSettingsSelected !optional;
+}
+.selectorButtonPremiumRequired_ce72d6 {
+  @extend %screenshareSettingsPremiumRequired !optional;
 }
 .card__3662a {
   @extend %serverWelcomeCards !optional;
 }
 .checkmark__0b63d {
   @extend %serverInviteTick !optional;
-}
-.selectorButton-3fWZ0_ {
-  @extend %screenshareSettingsSelector !optional;
-}
-.selectorButtonSelected-3cQUnj {
-  @extend %screenshareSettingsSelected !optional;
-}
-.selectorButtonPremiumRequired-IZXhgV {
-  @extend %screenshareSettingsPremiumRequired !optional;
 }
 .textContainer__709ff {
   @extend %textContainer !optional;
@@ -3368,12 +3931,6 @@ pre {
 }
 .languageSelector_a1c2f3 {
   @extend %languageSelector !optional;
-}
-.item-1BCeuB {
-  @extend %languageSelectorItem !optional;
-}
-.selected-22ukbQ {
-  @extend %languageSelectorSelected !optional;
 }
 .modalTextContainer_ddfc28 {
   @extend %textContainerModal !optional;
@@ -3396,20 +3953,29 @@ pre {
 .gradientContainer__9a5a6 {
   @extend %stageGradientContainer !optional;
 }
-.container-2t1JyW {
-  @extend %stageHeaderContainer !optional;
-}
 .rowContainer__3f2d1 {
   @extend %stageSpeakers !optional;
 }
 .participants__5d231 {
   @extend %stageParticipants !optional;
 }
+.primaryButtonColor__236e9 {
+  @extend %stageLeaveButton !optional;
+}
 .tileContainer__88d69 {
   @extend %stageParticipant !optional;
 }
-.container-36u7Lw {
-  @extend %stageModIconContainer !optional;
+.toast__4a149 {
+  @extend %stageMessageToast !optional;
+}
+.messageContentWrapper__72f89 {
+  @extend %stageMessageToastWrapper !optional;
+}
+.topicFormItem_dc6100 {
+  @extend %stageTopicForm !optional;
+}
+.textInput__27b94 {
+  @extend %stageTopicInput !optional;
 }
 .container__7b94f {
   @extend %stageRequestContainer !optional;
@@ -3423,22 +3989,37 @@ pre {
 .iconBackground__61963 {
   @extend %stageIconBackground !optional;
 }
-.textInput-2xgsSa {
-  @extend %stagePopoutTextInput !optional;
-}
-.audienceVoiceUserIconContainer-1aQGLF {
-  @extend %stageUserIconContainer !optional;
-}
 .container__515b3 {
   @extend %stageOptionContainer !optional;
 }
 .separator_c99b23 {
   @extend %stageSeparator !optional;
 }
-.categoryPill-1zjNrr {
+.voiceUser__0470a {
+  @extend %stageVoiceUser !optional;
+}
+.overlap_c76e16 {
+  @extend %stageVoiceUserOverlap !optional;
+}
+.avatar_a56eee {
+  @extend %stageVoiceUserAvatar !optional;
+}
+.audienceContainer_d4eada {
+  @extend %stageAudienceContainer !optional;
+}
+.audienceIconContainer_b469ed {
+  @extend %stageAudienceIconContainer !optional;
+}
+.audienceIcon_f0f8e7 {
+  @extend %stageAudienceIcon !optional;
+}
+.stageListenerPill_ef06b3 {
+  @extend %stageGuildListenerIcon !optional;
+}
+.categoryPill_c95cea {
   @extend %categoryPill !optional;
 }
-.selected-bLcqYK {
+.selected__24846 {
   @extend %categoryPillSelected !optional;
 }
 .pageControlContainer_b111b0 {
@@ -3486,6 +4067,12 @@ pre {
 .section_efc22d {
   @extend %activeNowCardSection !optional;
 }
+.partyMemberOverflow_d12297 {
+  @extend %activeNowPartyOverflow !optional;
+}
+.applicationStreamingPreviewWrapper__97a95 {
+  @extend %activeNowPreviewWrapper !optional;
+}
 .emptyCard_f82dde {
   @extend %emptyActiveNowCard !optional;
 }
@@ -3498,23 +4085,17 @@ pre {
 .focused__47631 {
   @extend %quickReactButtonFocused !optional;
 }
-.subscribeTooltipWrapper-3ipXtC {
-  @extend %subscribeTooltipWrapper !optional;
-}
-.subscribeTooltipHeader-15pGbG {
-  @extend %subscribeTooltipHeader !optional;
-}
-.subscribeTooltipText-2A8MMi-1JoUuw {
-  @extend %subscribeTooltipText !optional;
+.premiumUpsell_e1bfd9 {
+  @extend %quickReactPremiumUpsell !optional;
 }
 .upsellTooltipWrapper_df8272 {
   @extend %upsellTooltipText !optional;
 }
-.wrapper__93f27 {
-  @extend %stickersUploadCard !optional;
+.caretTopCenter__3f88f {
+  @extend %upsellTooltipCaretTopCenter !optional;
 }
-.tierLock__3e43d {
-  @extend %stickersTierLock !optional;
+.reactionTooltip__9384a {
+  @extend %reactionTooltip !optional;
 }
 .messagesPopoutWrap_b3b384 {
   @extend %messagesPopoutWrap !optional;
@@ -3537,11 +4118,23 @@ pre {
 .channelHeader__5d30c {
   @extend %messagesPopoutChannelHeader !optional;
 }
+.guildIcon_cccd03 {
+  @extend %messagesPopoutChannelHeaderIcon !optional;
+}
 .messageGroupWrapper_f8c6e9 {
   @extend %pinnedMessageGroupWrapper !optional;
 }
 .jumpButton__0329d {
   @extend %pinnedJumpButton !optional;
+}
+.regionSelectPopout__0127b {
+  @extend %regionSelectPopout !optional;
+}
+.quickSelectPopoutOption__39224 {
+  @extend %regionSelectPopoutOption !optional;
+}
+.regionSelectName__7c81f {
+  @extend %regionSelectName !optional;
 }
 .recentMentionsPopout__826a9 {
   @extend %recentMentionsPopout !optional;
@@ -3587,6 +4180,9 @@ pre {
 }
 .container__20de0 {
   @extend %inboxHeader !optional;
+}
+.calloutContainer_c0109d {
+  @extend %inboxChattingAbout !optional;
 }
 .container__8261a {
   @extend %threadsPopoutContainer !optional;
@@ -3636,38 +4232,17 @@ pre {
 .more__14345 {
   @extend %channelThreadPopoutMore !optional;
 }
-.container_c24cbd {
-  @extend %threadContainer !optional;
-}
-.isOpen_d88bb6 {
-  @extend %threadOpen !optional;
-}
-.contentPreview_b317ee {
-  @extend %threadContentPreview !optional;
-}
-.container_def45c {
-  @extend %threadChat !optional;
-}
 .iconWrapper__85630 {
   @extend %threadIconWrapper !optional;
 }
 .container__6604b {
   @extend %threadPreview !optional;
 }
-.modal-ZdazA8 {
+.modal__48b3d {
   @extend %threadModal !optional;
 }
-.list-1uSVgu {
+.list__19127 {
   @extend %threadModalList !optional;
-}
-.tabBar-3N44FC {
-  @extend %threadModalTabBar !optional;
-}
-.tab-1tp4jL {
-  @extend %threadModalTab !optional;
-}
-.active-3WMEyE {
-  @extend %threadModalTabActive !optional;
 }
 .hasThread__58ee2 {
   @extend %messageHasThread !optional;
@@ -3681,63 +4256,6 @@ pre {
 .emptyStateIcon__9ee16 {
   @extend %threadMembersEmptyIcon !optional;
 }
-.wrapper-1w686E {
-  @extend %serverBoostWrapper !optional;
-}
-.navigationBar-3r0IQK {
-  @extend %serverBoostNavigationBar !optional;
-}
-.progressBarTrack-31JzOY {
-  @extend %serverBoostProgressBarTrack !optional;
-}
-.progressBarFill-r3JZQ7 {
-  @extend %serverBoostProgressBarFill !optional;
-}
-.progressBarMarker-2F7kNV {
-  @extend %serverBoostProgressBarMarker !optional;
-}
-.progressBarMarkerNumSubscriptionsRequired-4_Rgoj {
-  @extend %serverBoostProgressBarMarkerNumSubReq !optional;
-}
-.progressBarMarkerNextTier-1lj6AI {
-  @extend %serverBoostProgressBarMarkerNextTier !optional;
-}
-.progressBarMarkerUnlocked-2l_py0 {
-  @extend %serverBoostProgressBarUnlocked !optional;
-}
-.progressBarMarkerIndicator-2Vf_sE {
-  @extend %serverBoostProgressBarMarkerIndicator !optional;
-}
-.planCard-3heGy1 {
-  @extend %serverBoostPlanCard !optional;
-}
-.perksTable-2Hjc0m {
-  @extend %perksTable !optional;
-}
-.perksTableRow-n0T8Yj {
-  @extend %perksTableRow !optional;
-}
-.perksTableRowBody-pELwOS {
-  @extend %perksTableRowBody !optional;
-}
-.perksTableRowFocused--UdCIh {
-  @extend %perksTableRowFocused !optional;
-}
-.perksTableRowPerkHighlighted-33Ea3c {
-  @extend %perksTableRowHighlighted !optional;
-}
-.perksTableHighlightedColumnHeader-1f38p4 {
-  @extend %perksTableHighlightedColumnHeader !optional;
-}
-.perksTableHighlightedColumnHeaderCopy-2DMeJr {
-  @extend %perksTableHighlightedColumnHeaderCopy !optional;
-}
-.perksTablePerkCheckmarkTier0-S7zpLb {
-  @extend %perksTablePerkCheckmarkTier0 !optional;
-}
-.perkPopout-2bt1aW {
-  @extend %perkPopout !optional;
-}
 .compactButton__0f247 {
   @extend %waveButton !optional;
 }
@@ -3746,15 +4264,6 @@ pre {
 }
 .option_f70eea {
   @extend %serverDeleteReasonOption !optional;
-}
-.checkbox-1ycfTw {
-  @extend %deleteServerCheckbox !optional;
-}
-.checkboxInner-1aRh1d {
-  @extend %deleteServerCheckboxInner !optional;
-}
-.checkboxElement-uwAa9F {
-  @extend %deleteServerCheckboxElement !optional;
 }
 .streamPreview__1846c {
   @extend %streamPopoutPreview !optional;
@@ -3765,13 +4274,13 @@ pre {
 .watchButton__0d283 {
   @extend %streamPopoutWatchButton !optional;
 }
-.header-1sd0RU {
+.header__7133e {
   @extend %eventHeader !optional;
 }
-.circle-2tR2Qh {
+.circle__2005c {
   @extend %eventIconCircle !optional;
 }
-.eventCard-2ZL9GD {
+.card__7865b {
   @extend %eventCard !optional;
 }
 .eventStatusBrand__948ce {
@@ -3780,11 +4289,8 @@ pre {
 .eventStatusLabel__4d7cc {
   @extend %eventStatusLabel !optional;
 }
-.eventStatusGreen_ca17ec {
-  @extend %eventStatusLabel !optional;
-}
-.previewCard-E137i2 {
-  @extend %eventStatusGreen !optional;
+.eventStatusContainer__92035 {
+  @extend %eventIconContainer !optional;
 }
 .rsvpCount__4657d {
   @extend %eventRSVPCount !optional;
@@ -3792,59 +4298,44 @@ pre {
 .rsvpIcon_a79c28 {
   @extend %eventRSVPIcon !optional;
 }
-.container-3EBHNg {
+.container_f3270f {
   @extend %eventInfoHeader !optional;
 }
-.container-3eB5yh {
-  @extend %eventInfoContent !optional;
-}
-.contentContainer-BWAau5 {
+.contentContainer__3b585 {
   @extend %eventInfoContentContainer !optional;
 }
-.circle-1g-jMn {
+.circle_d71ba0 {
   @extend %eventInfoIconCircle !optional;
 }
-.iconBackground-3gHYPJ {
-  @extend %eventIconBackground !optional;
-}
-.progressBar-18rmp1 {
+.progressBar__0a392 {
   @extend %createEventProgressBar !optional;
 }
-.selectedProgressBar-11z5d9 {
+.selectedProgressBar__10383 {
   @extend %createEventProgressBarSelected !optional;
 }
-.container-1hz3gm {
-  @extend %createEventLocationContainer !optional;
-}
-.form-1ejeax {
-  @extend %createEventInfoForm !optional;
-}
-.container-3zZkKh {
+.container__52a36 {
   @extend %createEventCreateStageContainer !optional;
 }
-.textInput-3g8y92 {
+.textInput__210e5 {
   @extend %createEventTextInput !optional;
 }
-.previewCard-E137i2 {
+.previewCard_aef1ab {
   @extend %createEventPreviewCard !optional;
 }
-.iconContainer-36kI2p {
-  @extend %createEventIconContainer !optional;
+.colorMuted_ae2200 {
+  @extend %createEventColorMuted !optional;
+}
+.colorBrand_be5f58 {
+  @extend %createEventColorBrand !optional;
 }
 .container_e4c233 {
   @extend %stickerSearchContainer !optional;
-}
-.wrapper__4f229 {
-  @extend %stickerCategoryWrapper !optional;
 }
 .stickerCategoryGeneric__431fb {
   @extend %stickerCategoryGeneric !optional;
 }
 .stickerCategoryGenericSelected__44ec4 {
   @extend %stickerCategoryGenericSelected !optional;
-}
-.upsellContent-1ppSei {
-  @extend %stickerUpsellContent !optional;
 }
 .row__959bb {
   @extend %stickerPickerRow !optional;
@@ -3861,20 +4352,23 @@ pre {
 .unreadMentionsIndicatorTop_ada847 {
   @extend %guildUnreadMentionsTop !optional;
 }
-.css-3vaxre-menu {
-  @extend %pruneMemberMenu !optional;
-}
-.css-rzbxvl-option {
-  @extend %pruneMemberMenuDropdown !optional;
-}
-.list-3-WAYB {
-  @extend %manageAccountsList !optional;
+.unreadMentionsIndicatorBottom_fdb943 {
+  @extend %guildUnreadMentionsBottom !optional;
 }
 .authBox__7196a {
-  @extend %addAccountAuthBox !optional;
+  @extend %loginAuthBox !optional;
 }
-.navRow-dG-XX8 {
-  @extend %addAccountNavRow !optional;
+.list__4e6aa {
+  @extend %loginAccountsList !optional;
+}
+.startOverButton_b3ba6f {
+  @extend %loginStartOverButton !optional;
+}
+.container_c11257 {
+  @extend %loginVerificationContainer !optional;
+}
+.navRow_bb8efc {
+  @extend %addAccountFooter !optional;
 }
 .copyInput_c1c679 {
   @extend %copyGiftCode !optional;
@@ -3936,69 +4430,155 @@ pre {
 .sidebarContainer__5583d {
   @extend %hubPopoutSidebar !optional;
 }
-.scrollTierBackground-BnWR8k {
+.scrollTierBackground__36806 {
   @extend %activitiesScroller !optional;
 }
-.activityItem-1Z9CTr {
+.activityItem__33da9 {
   @extend %activityItem !optional;
 }
-.activityTag-3C3YK5 {
+.disabled_b6f87e {
+  @extend %activityItemDisabled !optional;
+}
+.activityTag__01970 {
   @extend %activityTag !optional;
 }
-.modalHeader-3X0A4K {
+.modalHeader_e68db4 {
   @extend %activityModalHeader !optional;
 }
-.modalDivider-MtZbPb {
+.modalDivider__67d13 {
   @extend %activityModalDivider !optional;
 }
 .container_b181b6 {
   @extend %forumContainer !optional;
 }
-.container__99b06 {
-  @extend %forumCardContainer !optional;
+.header_c01fde {
+  @extend %forumHeader !optional;
 }
-.mainCard__8a660 {
-  @extend %forumCard !optional;
+.title__38892 {
+  @extend %forumSearch !optional;
+}
+.matchingPostsRow__510be {
+  @extend %forumSearchRow !optional;
+}
+.uploadInput_bbab2f {
+  @extend %forumUploadButton !optional;
+}
+.uploadIcon_fe2ad4 {
+  @extend %forumUploadIcon !optional;
+}
+.icon__8bfe4 {
+  @extend %forumFirstIcon !optional;
 }
 .increasedActivityMainCard__916ed {
   @extend %forumIncreasedCard !optional;
 }
-.title__964d5,
+.container_a4e239 {
+  @extend %forumSetupContainer !optional;
+}
+.stepContainer__2f6a9 {
+  @extend %forumSetupStepContainer !optional;
+}
+.stepStatus_f620c2 {
+  @extend %forumSetupStepStatus !optional;
+}
+.rolesList__55c4f {
+  @extend %forumSetupRoleList !optional;
+}
+.title__964d5 {
+  @extend %forumGalleryCardTitle !optional; 
+}
 .postTitleText__11fd1 {
-  @extend %forumCardName !optional;
+  @extend %forumListCardTitle !optional;
 }
-.isOpen__8593d {
-  @extend %forumOpenCard !optional;
+.pinIcon__39b6e {
+  @extend %forumPinIcon !optional;
 }
-.isOpen__036bf {
-  @extend %forumIncreasedOpenCard !optional;
-}
-.loadingCard-3pIp9h {
-  @extend %forumLoadingCard !optional;
-}
-.headerRow-1MKoR- {
-  @extend %forumHeaderRow !optional;
+.loadingCard_a6aa0a {
+  @extend %forumLoading !optional;
 }
 .replies_c11247 {
   @extend %forumIncreasedReplyPreview !optional;
 }
-.tagsDivider-3LhkLA {
-  @extend %forumHeaderBorder !optional;
+.container__4abd7 {
+  @extend %forumEmpty !optional;
 }
-.container-2nXUah {
-  @extend %forumNoConversations !optional;
+.cta__3ca11 {
+  @extend %forumEmptyCTA !optional;
+}
+.container_b634d9 {
+  @extend %forumExample !optional;
+}
+.tag__5bfc0 {
+  @extend %forumExampleTag !optional;
+}
+.post__13d06 {
+  @extend %forumExamplePost !optional;
+}
+.previewContainer__0f3c5 {
+  @extend %forumExamplePreviewContainer !optional;
+}
+.preview_c16c3b {
+  @extend %forumExamplePreview !optional;
+}
+.forumPostIcon__3d972 {
+  @extend %forumExamplePreviewPostIcon !optional;
+}
+.bottomSeparator__3e1ef {
+  @extend %forumExamplePreviewBottomSeparator !optional;
+}
+.chatInput__06d78 {
+  @extend %forumExamplePreviewInput !optional;
 }
 .sortDropdown_ec3016 {
-  @extend %forumSortDropdown !optional;
+  @extend %forumSortDropdownButton !optional;
+}
+.sortDropdownInner__2456c {
+  @extend %forumSortDropdownButtonInner !optional;
 }
 .sortDropdownText_e8ca8d {
-  @extend %forumSortDropdownText !optional;
+  @extend %forumSortDropdownButtonText !optional;
+}
+.container_dbdb0b {
+  @extend %forumSortDropdownContainer !optional;
 }
 .textContentFooter__5a630 {
   @extend %forumContentFooter !optional;
 }
+.container_c24cbd {
+  @extend %forumCardContainer !optional;
+}
+.isOpen_d88bb6 {
+  @extend %forumCardOpen !optional;
+}
+.contentPreview_b317ee {
+  @extend %forumContentPreview !optional;
+}
+.container__99b06 {
+  @extend %forumListContainer !optional;
+}
+.isOpen__8593d {
+  @extend %forumListOpen !optional;
+}
+.isOpen__036bf {
+  @extend %forumIncreasedOpenCard !optional;
+}
+.container_def45c {
+  @extend %forumChat !optional;
+}
 .pill_f055c3 {
   @extend %forumTag !optional;
+}
+.messageCountIcon__73000 {
+  @extend %forumMessageCountIcon !optional;
+}
+.newMessageCount_f45ea7 {
+  @extend %forumNewMessageCountText !optional;
+}
+.dots__360d3 {
+  @extend %forumGalleryTypingDots !optional;
+}
+.dots__44c48 {
+  @extend %forumListTypingDots !optional;
 }
 .increasedActivityPill__0f3bd {
   @extend %forumIncreasedTag !optional;
@@ -4012,47 +4592,23 @@ pre {
 .disabled__70fda {
   @extend %forumTagDisabled !optional;
 }
-.pencilIcon-1d4fcw {
-  @extend %forumPencilIcon !optional;
-}
-.searchIcon-2Nw0OL {
-  @extend %forumSearchIcon !optional;
-}
-.closeIcon-3xe5xL {
-  @extend %forumCloseIcon !optional;
-}
-.searchInput-3NGPfp {
-  @extend %forumSearchInput !optional;
-}
-.title__38892 {
-  @extend %forumSearch !optional;
-}
-.matchingPostsRow__510be {
-  @extend %forumSearchRow !optional;
-}
 .container_ae7412 {
   @extend %forumTagBox !optional;
 }
 .countContainer__51412 {
   @extend %forumTagBoxCount !optional;
 }
+.countContainer__1b48f {
+  @extend %forumTagSelectedCount !optional;
+}
 .clear__72191 {
   @extend %forumTagClear !optional;
-}
-.countContainer-3uQ087 {
-  @extend %forumTagCount !optional;
 }
 .tagsButton_e96762 {
   @extend %forumTagButton !optional;
 }
 .tagsButtonInner_a70c04 {
   @extend %forumTagButtonInner !optional;
-}
-.contentContainer-2xwoXK {
-  @extend %forumContentContainer !optional;
-}
-.uploadInput_bbab2f {
-  @extend %forumUploadIcon !optional;
 }
 .iconWrapper__3e4a9 {
   @extend %forumChatIcon !optional;
@@ -4081,20 +4637,32 @@ pre {
 .newPostsButton__760c6 {
   @extend %forumNewPosts !optional;
 }
-.heading-lg-bold__02f24 {
+.heading-lg-bold_c2517a {
   @extend %headingLargeBold !optional;
 }
-.heading-lg-semibold__85c17 {
+.heading-lg-semibold_a200cd {
   @extend %headingLargeSemibold !optional;
 }
-.text-sm-medium_bc6ffc {
+.text-xs-normal__56c35 {
+  @extend %textExtraSmallNormal !optional;
+}
+.text-xs-medium__30cbe {
+  @extend %textExtraSmallMedium !optional;
+}
+.text-xs-bold_c1eb0a {
+  @extend %textExtraSmallBold !optional;
+}
+.text-sm-medium__1ba28 {
   @extend %textSmallMedium !optional;
 }
-.text-md-medium_b12de1 {
+.text-md-medium__5151a {
   @extend %textMediumMedium !optional;
 }
-.text-md-normal__6a4eb {
+.text-md-normal__4afad {
   @extend %textMediumNormal !optional;
+}
+.text-sm-normal_e612c7 {
+  @extend %textSmallNormal !optional;
 }
 .directoryContainer_d3edd9 {
   @extend %directoryContainer !optional;
@@ -4107,6 +4675,9 @@ pre {
 }
 .container__7b33c {
   @extend %directoryListCard !optional;
+}
+.container_a6c201 {
+  @extend %directoryNewToApps !optional;
 }
 .clickable__8d049 {
   @extend %directoryCardClickable !optional;
@@ -4132,10 +4703,10 @@ pre {
 .commandName__72789 {
   @extend %directoryAppCommand !optional;
 }
-.cardHeader__62148 {
+.cardHeader_ceb21a {
   @extend %directoryAppPremiumCardHeader !optional;
 }
-.benefitsContainer_f75168 {
+.benefitsContainer__8c817 {
   @extend %directoryAppPremiumContainer !optional;
 }
 .list_a19d86 {
@@ -4156,7 +4727,6 @@ pre {
 .keybindHint__70c7e {
   @extend %soundboardHint !optional;
 }
-
 .homeContainer_a4aa0a {
   @extend %homeContainer !optional;
 }
@@ -4175,11 +4745,26 @@ pre {
 .action_c957d9 {
   @extend %serverGuideAction !optional;
 }
+.checkCircleCompleted_c66388 {
+  @extend %serverGuideActionCompleted !optional;
+}
 .sidebarCardWrapper__2c840 {
   @extend %serverGuideSidebarCard !optional;
 }
 .row__70f4c {
   @extend %serverGuideRow !optional;
+}
+.channelIconContainer__5df13 {
+  @extend %serverGuideChannelIcon !optional;
+}
+.rulesIconContainer__2a9f3 {
+  @extend %serverGuideRulesIcon !optional;
+}
+.banner_f13f1e {
+  @extend %serverGuideChannelHintBanner !optional;
+}
+.iconCircle_de71da {
+  @extend %serverGuideChannelHintIcon !optional;
 }
 .scroller__5e182 {
   @extend %serverSubscription !optional;
@@ -4205,32 +4790,11 @@ pre {
 .overlay_ef4f80 {
   @extend %serverExperienceGradient !optional;
 }
-.inviteRow-3vmB7i {
-  @extend %inviteModalRow !optional;
-}
-.inviteBannerUpsell-1t_LYM {
-  @extend %inviteModalUpsell !optional;
-}
-.temporaryMembershipContainerBackground-13Hf5U {
-  @extend %inviteModalTemporary !optional;
-}
 .tabBar_d4764b {
   @extend %customizeChannelsHeaderBar !optional;
 }
 .prompt__1b100 {
   @extend %customizeChannelsPrompt !optional;
-}
-.css-fcsbhh-control {
-  @extend %customizeChannelsSearch !optional;
-}
-.css-1t5q03r-control {
-  @extend %customizeChannelsSearchDropdown !optional;
-}
-.css-153nlb6-option {
-  @extend %customizeChannelsSearchOption !optional;
-}
-.css-6sv4e8-menu {
-  @extend %customizeChannelsSearchMenu !optional;
 }
 .selectValuePill__95251 {
   @extend %customizeChannelsPill !optional;
@@ -4253,9 +4817,6 @@ pre {
 .selectAll_a87487 {
   @extend %browseChannelsSelectAll !optional;
 }
-.checked-1pZh2h {
-  @extend %browseChannelsChecked !optional;
-}
 .channelRow__96673 {
   @extend %browseChannelsRow !optional;
 }
@@ -4265,7 +4826,9 @@ pre {
 .chatHeaderBar__28ee6 {
   @extend %channelHeaderBar !optional;
 }
+.mainTableContainer_ea650e, // this is the one in the server settings
 .mainTableContainer__5ffe0 {
+  // and this is the one in the channel. why are there 2??
   @extend %membersChannelContainer !optional;
 }
 .table_a843c4 {
@@ -4302,7 +4865,7 @@ pre {
   @extend %avatarDecoItemSelected !optional;
 }
 .iconBadge__5fd10 {
-  @extend %avatarDecoItemBadge !optional;
+  @extend %avatarDecoItemLock !optional;
 }
 .decorationPreview_d09d2f {
   @extend %avatarDecoPreview !optional;
@@ -4310,11 +4873,38 @@ pre {
 .smallDecorationPreviewsContainer_c0deb8 {
   @extend %avatarDecoPreviewSmall !optional;
 }
+.shopPreviewContainer__15dfd {
+  @extend %avatarDecoPreviewUpsell !optional;
+}
+.effectGridItem__957b0 {
+  @extend %profileEffectItem !optional;
+}
+.selected_bfc68b {
+  @extend %profileEffectItemSelected !optional;
+}
+.lockBadge__7140f {
+  @extend %profileEffectItemLock !optional;
+}
+.effectDescriptionNoGradient__2ac4a {
+  @extend %profileEffectDescription !optional;
+}
+.effectDescriptionBorderWithGradient__33bff {
+  @extend %profileEffectDescriptionUpsell !optional;
+}
+.effectDescriptionContainer_d33b78 {
+  @extend %profileEffectDescriptionContainer !optional;
+}
 .statusDot__468f8 {
   @extend %userProfileStatus !optional;
 }
 .shop_b31ed2 {
   @extend %shop !optional;
+}
+.shopScrollBackgroundPrimary_bb1f42 {
+  @extend %shopBackground !optional;
+}
+.pageWrapperBackgroundPrimary__74f14 {
+  @extend %shopPageWrapper !optional;
 }
 .skeleton__5ac25 {
   @extend %shopLoadingSkeleton !optional;
@@ -4330,6 +4920,15 @@ pre {
 .cardDescription__435dd,
 .cardSummary__432c0 {
   @extend %shopLoadingCardContent !optional;
+}
+.shopCard_f7822b {
+  @extend %shopCard !optional;
+}
+.cardBackground_af6852 {
+  @extend %shopCardBackground !optional;
+}
+.darkCardBackground__82a32 {
+  @extend %shopCardDarkBackground !optional;
 }
 .modalContent__3d79f {
   @extend %shopModal !optional;
@@ -4358,12 +4957,6 @@ pre {
 .editor_e77931 {
   @extend %sidebarPFPUpsell !optional;
 }
-.container__0ec3c {
-  @extend %userPFPUpsell !optional;
-}
-.ctaContainer__95bd7 {
-  @extend %userPFPUpsellTop !optional;
-}
 .root_b4f834 {
   @extend %serverLeave !optional;
 }
@@ -4391,6 +4984,9 @@ pre {
 .guildSection_ebda04 {
   @extend %emojiInfoGuild !optional;
 }
+.category_f995ff {
+  @extend %channelSettingsCategory !optional;
+}
 .settingCard__00567 {
   @extend %channelSettingsCard !optional;
 }
@@ -4399,4 +4995,304 @@ pre {
 }
 .cardFolder__34393 {
   @extend %channelSettingsCardPanel !optional;
+}
+.group__6ae8b {
+  @extend %channelSettingsPermissionsGroup !optional;
+}
+.item_f48d11 {
+  @extend %channelSettingsPermissionsItem !optional;
+}
+.selected__47401 {
+  @extend %channelSettingsPermissionsSelected !optional;
+}
+.deny__71546 {
+  @extend %channelSettingsPermissionsDeny !optional;
+}
+.passthrough__7cd54 {
+  @extend %channelSettingsPermissionsPassthrough !optional;
+}
+.allow_bbc621 {
+  @extend %channelSettingsPermissionsAllow !optional;
+}
+.header__02652 {
+  @extend %channelSettingsRoleDropdownHeader !optional;
+}
+.container_e84cda {
+  @extend %channelSettingsRoleDropdownContainer !optional;
+}
+.sectionTag_b0df68 {
+  @extend %channelSettingsRoleDropdownTag !optional;
+}
+.row__3fe26 {
+  @extend %channelSettingsRoleDropdownRow !optional;
+}
+.rowInner_feb94d {
+  @extend %channelSettingsRoleDropdownRowInner !optional;
+}
+.selected__75860 {
+  @extend %channelSettingsRoleDropdownSelected !optional;
+}
+.iconContainer__6fc72 {
+  @extend %previewServerIconContainer !optional;
+}
+.defaultColor__87d87 {
+  @extend %defaultColor !optional;
+}
+.container__0d1a7 {
+  @extend %addServerContainer !optional;
+}
+.subtitle__89b16 {
+  @extend %addServerSubtitle !optional;
+}
+.container__73245 {
+  @extend %addServerOption !optional;
+}
+.text__43e5f {
+  @extend %addServerOptionText !optional;
+}
+.arrow__5e540 {
+  @extend %addServerOptionArrow !optional;
+}
+.optionHeader_b6da7f {
+  @extend %addServerOptionHeader !optional;
+}
+.subtitle_a75f7f {
+  @extend %createServerTitle !optional;
+}
+.subtitle__963da {
+  @extend %createServerSubtitle !optional;
+}
+.iconContainer_cd2671 {
+  @extend %createServerIconContainer !optional;
+}
+.skip_f687eb {
+  @extend %createServerSkip !optional;
+}
+.backButton__576ea {
+  @extend %createServerBackButton !optional;
+}
+.backButton_c0ce06 {
+  @extend %createServerOtherBackButton !optional;
+}
+.input__0c269 {
+  @extend %joinServerInput !optional;
+}
+.sampleLink__771c4 {
+  @extend %joinServerExample !optional;
+}
+.rowContainer__6f4c6 {
+  @extend %joinServerRow !optional;
+}
+.rowText_e87737 {
+  @extend %joinServerRowText !optional;
+}
+.rowArrow_d97795 {
+  @extend %joinServerRowArrow !optional;
+}
+.container__03857 {
+  @extend %voiceChannelListening !optional;
+}
+.container__60a4a {
+  @extend %voiceChannelListeningIcon !optional;
+}
+.optionContainer__5d0b1 {
+  @extend %previewServerOptionContainer !optional;
+}
+.channelIcon__1565e {
+  @extend %previewServerChannelIcon !optional;
+}
+.channelTitleIcon__1896b {
+  @extend %previewServerChannelTitleIcon !optional;
+}
+.optionArrow__4c748 {
+  @extend %previewServerChannelOptionArrow !optional;
+}
+.notice__99c03 {
+  @extend %previewServerNotice !optional;
+}
+.header__72166 {
+  @extend %previewServerHeader !optional;
+}
+.container_d4b118 {
+  @extend %previewServerContainer !optional;
+}
+.button__671cf {
+  @extend %previewServerBackButton !optional;
+}
+.communityInfoPill_d3f445 {
+  @extend %previewServerStatus !optional;
+}
+.container__92dc8 {
+  @extend %previewServerHomeContainer !optional;
+}
+.container_acafc1 {
+  @extend %previewServerHomeContainerInner !optional;
+}
+.icon_f71c55 {
+  @extend %previewServerHomeIcon !optional;
+}
+.interactiveCard_d5a839 {
+  @extend %previewServerHomeInteractiveCard !optional;
+}
+.selected__715e8 {
+  @extend %previewServerHomeInteractiveCardSelected !optional;
+}
+.card_d4f6c7 {
+  @extend %previewServerHomeCard !optional;
+}
+.container__16581 {
+  @extend %previewServerConversation !optional;
+}
+.conversationRoot__11fa6 {
+  @extend %previewServerConversationRoot !optional;
+}
+.replySpine_ed1feb {
+  @extend %previewServerConversationReply !optional;
+}
+.conversationMessage__0d40e {
+  @extend %previewServerConversationMessage !optional;
+}
+.innerWrapper__8cde3 {
+  @extend %serverBoostPageBoostPrompt !optional;
+}
+.topPerksCard__9fc01 {
+  @extend %serverBoostPageTopPerksCard !optional;
+}
+.card__67edb {
+  @extend %serverBoostPageCard !optional;
+}
+.wrapper_cf13f4 {
+  @extend %serverBoostPageFaq !optional;
+}
+.scroller__439a2 {
+  @extend %serverBoostPageScroller !optional;
+}
+.headerWave_e4fdee {
+  @extend %serverBoostPageHeaderWave !optional;
+}
+.bodyWave__62812 {
+  @extend %serverBoostPageBodyWave !optional;
+}
+.contentWarningPopout__7d8c2 {
+  @extend %everyoneWarningPopout !optional;
+}
+.footer__36118 {
+  @extend %everyoneWarningFooter !optional;
+}
+.modalHeaderCustomGift_af2c51 {
+  @extend %giftModalHeader !optional;
+}
+.iconBackground_c5c678 {
+  @extend %giftModalIconBackground !optional;
+}
+.spinner_caad3a {
+  @extend %giftModalSpinner !optional;
+}
+.container__5a6b1 {
+  @extend %serverShopIntro !optional;
+}
+.selected__70739 {
+  @extend %serverShopSelected !optional;
+}
+.unread_ade69e {
+  @extend %inboxPopoutPill !optional;
+}
+.modal_b38209 {
+  @extend %beforeTalkRuleContainer !optional;
+}
+.fieldBackground_d6edfa {
+  @extend %beforeTalkRulesBackground !optional;
+}
+.termsRow_a03d1d {
+  @extend %beforeTalkRule !optional;
+}
+.banReasonOtherClickable_e4b932 {
+  @extend %banReasonOther !optional;
+}
+.channelRow_bba4a8 {
+  @extend %recommendedDeafultChannels !optional;
+}
+.selectableChannelRow_c40337:hover {
+  @extend %updateChannelPermissionsItems !optional;
+}
+.deprivateTableBody_dbf647 {
+  @extend %updateChannelPermissionsMenu !optional;
+}
+.suggestedChannels__158f9 {
+  @extend %recommendedReadOnly !optional;
+}
+.container__25f89 {
+  @extend %pickAnEmoji !optional;
+}
+.searchRowLabel_b64d40 {
+  @extend %enterRoles !optional;
+}
+.buttonWhite__30853 {
+  @extend %nitroShopGiftNitro !optional;
+}
+.footer__03347 {
+  @extend %webhookFooter !optional;
+}
+.layer_ec16dd::after {
+  @extend %webhookBackground !optional;
+}
+.guildPopout_ea4d8c {
+  @extend %webhookPopout !optional;
+}
+.emojiCounter_facc23 {
+  @extend %webhookEmojiRow !optional;
+}
+.perkRow_bdbcf6 {
+  @extend %boostServerPerksRow !optional;
+}
+.perks__63e5a {
+  @extend %boostServerPerks !optional;
+}
+.sidebarContianer_e155a0 {
+  @extend %modView !optional;
+}
+.container__8316e {
+  @extend %modViewHeader !optional;
+}
+.topRow_b0479e {
+  @extend %modViewHeaderTop !optional;
+}
+.bottomRowAction__1d119 {
+  @extend %modViewHeaderBottomAction !optional;
+}
+.bottomRowActionDisabled__413d8 {
+  @extend %modViewHeaderBottomActionDisabled !optional;
+}
+.innerBottomRowAction_ccb714 {
+  @extend %modViewHeaderBottomActionInner !optional;
+}
+.container_c18052 {
+  @extend %modViewBody !optional;
+}
+.header__01d62 {
+  @extend %modViewBodyHeader !optional;
+}
+.modInfoItem__05dd7 {
+  @extend %modViewBodyItem !optional;
+}
+.modInfoAction__40259 {
+  @extend %modViewBodyAction !optional;
+}
+.permissionChiplet__7a040 {
+  @extend %modViewPermissionChiplet !optional;
+}
+.elevatedPermission_af9178 {
+  @extend %modViewElevatedPermissionChiplet !optional;
+}
+.innerContainer__68aae {
+  @extend %modViewActivity !optional;
+}
+.permissionItemContainer__274fd {
+  @extend %modViewPermissionItem !optional;
+}
+.elevatedPermission_c4dcb1 {
+  @extend %modViewElevatedPermissionItem !optional;
+}
+.buttonWhite__30853 {
+  @extend %giftNitro !optional;
 }
